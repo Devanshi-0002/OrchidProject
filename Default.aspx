@@ -7,12 +7,13 @@
     <meta name="description" content="Summer holiday packages from leading tours & travel company in India. Bhutan, Ladakh, Hong Kong, Nort heast & Thailand Packages at *Best price. Call @ 6290952054" />
     <style>
         .responsive-search-btn {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: bold;
             border-radius: 25px;
-            width: 120px;
-            height: 35px;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            width: 100px;
+            height: 30px;
+            /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);*/
+            box-shadow: inset 6px 0 5px #2121ad;
             text-align: center;
         }
 
@@ -175,7 +176,7 @@
 
                                     <div class="tab-pane active container" id="holidays">
                                         <div class="row custom-row-new">
-                                            <div class="col-sm-10" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                            <div class="col-sm-10" style="border-right: none">
                                                 <div class="custom-area">
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
@@ -187,7 +188,7 @@
                                                         <span id="destinationtype" runat="server" style="display: none"></span>
                                                         <%--<input type="text" class="form-control custom-form-control" id="validationDefaultUsername" placeholder="Where Will Your Next Holiday Be" aria-describedby="inputGroupPrepend2">--%>
                                                         <asp:TextBox ID="txtdestination" runat="server" Font-Size="14px"
-                                                            placeholder="Enter Destination eg. Thailand, Japan , Europe" class="form-control custom-form-control"></asp:TextBox>
+                                                            placeholder="Enter Destination eg. Thailand, Japan , Europe" class="form-control custom-form-control font-weight-bold"></asp:TextBox>
                                                         <%--<asp:AutoCompleteExtender ID="TextBox1_AutoCompleteExtender" runat="server" Enabled="True" ServiceMethod="Listofdestination" MinimumPrefixLength="1" EnableCaching="true" TargetControlID="txtdestination" CompletionInterval="1000" CompletionSetCount="10" CompletionListCssClass="completionListElement" CompletionListItemCssClass="listItem" CompletionListHighlightedItemCssClass="highlightedListItem"/>--%>
                                                         <asp:HiddenField ID="hfCustomerId" runat="server" />
                                                     </div>
@@ -498,9 +499,24 @@
             <div class="row">
                 <div class="home-theme-box">
                     <div class="view-all-area-homepage pl-4 pr-4">
-                        <h3 style="color: grey">Holiday Inspirations</h3>
+                        <h1 class="font-weight-bold">Holiday Inspirations</h1>
                     </div>
-                    <div class="div-break-line ml-4"></div>
+                    <div class="d-flex justify-content-center w-100 mb-3">
+                        <div class="div-header-underline-reverse ml-4" style="margin-top: 5px;"></div>
+                        <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                            </g></svg>
+                        <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                            </g></svg>
+                        <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                            </g></svg>
+                        <div class="div-header-underline mr-4" style="margin-top: 5px;"></div>
+                    </div>
                     <div class="pl-3 pr-3">
                         <div class="row ml-0 mr-2">
                             <div class="col-sm pl-1 pr-1">
@@ -609,9 +625,24 @@
                         <div class="home-theme-box">
                             <div class="row custom-row">
                                 <div class="view-all-area-homepage">
-                                    <h3>Recommended Holidays</h3>
+                                    <h1 class="font-weight-bold">Recommended Holidays</h1>
                                 </div>
-                                <div class="div-break-line"></div>
+                                <div class="d-flex justify-content-center w-100 mb-3">
+                                    <div class="div-header-underline-reverse ml-4" style="margin-top: 5px;"></div>
+                                    <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                            <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                                        </g></svg>
+                                    <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                            <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                                        </g></svg>
+                                    <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                            <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                                        </g></svg>
+                                    <div class="div-header-underline mr-4" style="margin-top: 5px;"></div>
+                                </div>
                             </div>
                             <div class="row custom-row">
                                 <asp:Repeater ID="DataListDomestic" runat="server">
@@ -639,9 +670,24 @@
                         <div class="home-theme-box">
                             <div class="row custom-row">
                                 <div class="view-all-area-homepage">
-                                    <h3>Featured Destinations</h3>
+                                    <h1 class="font-weight-bold">Featured Destinations</h1>
                                 </div>
-                                <div class="div-break-line"></div>
+                                <div class="d-flex justify-content-center w-100 mb-3">
+                                    <div class="div-header-underline-reverse ml-4" style="margin-top: 5px;"></div>
+                                    <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                            <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                                        </g></svg>
+                                    <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                            <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                                        </g></svg>
+                                    <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                                            <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
+                                        </g></svg>
+                                    <div class="div-header-underline mr-4" style="margin-top: 5px;"></div>
+                                </div>
                             </div>
                             <ul class="featured-destinations-box-area">
                                 <asp:Repeater ID="rptr_FeaturedDestinationsn" runat="server">
@@ -651,9 +697,9 @@
                                                 <asp:LinkButton ID="lnkbtn_FeaturedDestinations" runat="server" Text="" CommandArgument='<%# Eval("Destination")%>' CommandName='<%# Eval("Pkg_Group_type")%>' OnClick="lnkbtn_FeaturedDestinations_Click">
                                                     <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Image1") %>' CssClass="Zenith-Populer-Packages" />
                                                     <div class="imgoverlay-zenithpackage">
-                                                        <div class="overlay-meta-box">
+                                                        <div class="overlay-meta-box overlay-meta-box-top">
                                                             <%--<asp:Label ID="Label1" runat="server" Text='<%# Eval("Pkg_name") %>' Font-Size="14px" Style="color: white;" Visible-="false"></asp:Label><asp:Label ID="lblDomgroup" runat="server" Text='<%# Eval("Pkg_type") %>' Visible="false"></asp:Label><asp:Label ID="lblPkg_id" runat="server" Text='<%# Eval("Pkg_id") %>' Visible="false"></asp:Label>--%> <%--<h5><i class="fas fa-rupee-sign"></i> <%# Eval( "Per_Unit_Cost") %></h5>--%>
-                                                            <h4 style="color: white"><%# Eval("Destination")%></h4>
+                                                            <h3 class="font-weight-bold" style="color: white"><%# Eval("Destination")%></h3>
                                                         </div>
                                                         <%--<asp:Label ID="Label2" runat="server" Text='<%# Eval("Destination") %>'></asp:Label>--%>
                                                     </div>

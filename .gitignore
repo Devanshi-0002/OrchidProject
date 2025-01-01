@@ -2,6 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+
 /packages/*
 /.vs/*
-/.vs/LASTBACKUP01-02-2021/config/applicationhost.config
+
