@@ -793,31 +793,37 @@
                 <div class="extra-box-content-extra">
                     <div class="row custom-row">
                         <div class="col-sm-12 col-md-6 col-lg-6 border-right">
-                            <div class="row">
-                                <div class="before-footer before-footer-new text-left pb-0">
-                                    <h2>Need Help?</h2>
+
+                            <div class="row" style="text-align: center">
+                                <div class="col-6 col-sm-6"></div>
+                                <div class="col-6 col-sm-6">
+                                    <div class="before-footer before-footer-new pb-0">
+                                        <h2>Need Help?</h2>
+                                    </div>
                                 </div>
-                                <div class="col-7 col-sm-7">
+                            </div>
+                            <div class="row" style="text-align: center">
+                                <div class="col-6 col-sm-6">
+                                </div>
+                                <div class="col-6 col-sm-6">
                                     <div class="before-footer confused">
                                         <h4 class="font-weight-bold">Holidays In India</h4>
                                         <h5>Give us a call:</h5>
                                         <h5>+91 6290952054</h5>
                                     </div>
                                 </div>
-                                <div class="col-auto col-sm-3">
-                                    <img src="img/icons/phoneicon.png" alt="" class="w-50 mt-4" />
-                                </div>
                             </div>
-                            <h3 class="text-center font-weight-bold">OR</h3>
-                            <div class="row">
-                                <div class="col-7 col-sm-7">
+
+
+                            <h3 class="text-right font-weight-bold" style="margin-right: 90px">OR</h3>
+                            <div class="row" style="text-align: center">
+                                <div class="col-6 col-sm-6">
+                                </div>
+                                <div class="col-6 col-sm-6">
                                     <div class="before-footer confused">
                                         <h5>Write Us Email:</h5>
                                         <h5>enquiry@orchiddmc.net</h5>
                                     </div>
-                                </div>
-                                <div class="col-auto">
-                                    <img src="img/icons/emailicon.png" alt="" class="w-50 mt-4" />
                                 </div>
                             </div>
                         </div>
@@ -829,30 +835,36 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="input-group mb-4">
-                                            <input id="txt_EmailId" runat="server" type="email" class="form-control rounded-0" placeholder="Email Id" />
                                             <div class="input-group-prepend"><span class="input-group-text home-subs-icon"><i class="fas fa-envelope fa-lg"></i></span></div>
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txt_EmailId" Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Email" runat="server" />
-                                            <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txt_EmailId" ValidationGroup="sbk" ForeColor="white" ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
+                                            <input id="txt_EmailId" runat="server" type="email" class="form-control" placeholder="Email Id" />
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txt_EmailId"
+                                                Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Email" runat="server" />
+                                            <asp:RegularExpressionValidator ID="regexEmailValid" runat="server"
+                                                ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                                ControlToValidate="txt_EmailId" ValidationGroup="sbk" ForeColor="white"
+                                                ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="input-group mb-4">
                                             <%-- <input id="txt_PhoneNo" runat="server" type="text" class="form-control rounded-0" placeholder="Phone No" ondisposed="txt_PhoneNo_Disposed">--%>
-                                            <asp:TextBox ID="txt_PhoneNo" runat="server" class="form-control rounded-0" placeholder="Mobile Number" TextMode="Phone"></asp:TextBox>
                                             <span id="lbl_subscriber_mobileno" runat="server" style="display: none"></span>
                                             <div class="input-group-prepend"><span class="input-group-text home-subs-icon"><i class="fas fa-phone fa-lg"></i></span></div>
+                                            <asp:TextBox ID="txt_PhoneNo" runat="server" class="form-control " placeholder="Mobile Number" TextMode="Phone"></asp:TextBox>
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txt_PhoneNo" Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Mobile no." runat="server" />
                                             <asp:RegularExpressionValidator ID="REVtxt_PhoneNo" runat="server" ControlToValidate="txt_PhoneNo" ValidationGroup="sbk" ForeColor="white" ErrorMessage="Invalid Mobile no." ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="input-group mb-4">
-                                            <input id="txt_City" runat="server" type="text" class="form-control rounded-0" placeholder="City" />
                                             <div class="input-group-prepend"><span class="input-group-text home-subs-icon"><i class="fa fa-home"></i></span></div>
+                                            <input id="txt_City" runat="server" type="text" class="form-control " placeholder="City" />
                                         </div>
                                     </div>
                                 </div>
-                                <asp:LinkButton ID="lnlbtn_SUBSCRIBENOW" runat="server" type="submit" class="btn home-subs-icon text-dark rounded-0" Text="SUBSCRIBE NOW" ValidationGroup="sbk" OnClick="lnlbtn_SUBSCRIBENOW_Click"></asp:LinkButton>
+                                <asp:LinkButton ID="lnlbtn_SUBSCRIBENOW" runat="server" type="submit"
+                                    class="btn home-subs-icon text-dark  subscribe-btn-new" Text="SUBSCRIBE NOW" ValidationGroup="sbk"
+                                    OnClick="lnlbtn_SUBSCRIBENOW_Click"></asp:LinkButton>
                             </div>
                         </div>
                     </div>
