@@ -1017,13 +1017,19 @@ h5{ margin: 0;}
 	/* background: #fff; */
 }
 .home-subs-icon {
-	background-color: #ffb300;
-	border-color: #ffb300;
-	color: #fff;
+	background-color: #3e6eff;
+	border-color: #3e6eff;
+	color: #fff!important;
 }
-.home-subs-icon:hover{
-	background-color: #d09303;
-	border-color: #d09303;
+
+
+.subscribe-btn-new{
+	color:white;
+	border-radius:5px;
+}
+.home-subs-icon:hover {
+	background-color: #3e6eff;
+	border-color: #3e6eff;
 }
 #pills-home {
 	background: url(https://www.tourmyindia.com/imagesh1/delhi-weekend-tour.jpg) center center no-repeat;
@@ -1166,7 +1172,7 @@ a.nav-custom-link {
 	width: 100%;
 }
 .before-footer-new {
-	text-align: center;
+	/*text-align: center;*/
 	position: relative;
 }
 .before-footer-new:after {
