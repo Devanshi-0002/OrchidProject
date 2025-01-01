@@ -1,0 +1,225 @@
+﻿*
+{
+    font-size:12px;
+    font-family: Calibri;
+}
+body
+{
+    background-color: #E7EDF5;
+    background-image: url('../Images/contentbg.png');
+    background-repeat: repeat;
+}
+#topheader
+{
+    height: 50px;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #2A2A2A;
+}
+#leftmenu
+{
+    float: left;
+    width: 15%;
+    min-height: 90%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+   /*background: rgb(205, 222, 250);
+background: -moz-linear-gradient(0deg, rgb(205, 222, 250) 40%, rgb(165, 186, 239) 93%);
+background: -webkit-linear-gradient(0deg, rgb(205, 222, 250) 40%, rgb(165, 186, 239) 93%);
+background: -o-linear-gradient(0deg, rgb(205, 222, 250) 40%, rgb(165, 186, 239) 93%);
+background: -ms-linear-gradient(0deg, rgb(205, 222, 250) 40%, rgb(165, 186, 239) 93%);
+background: linear-gradient(0deg, rgb(205, 222, 250) 40%, rgb(165, 186, 239) 93%);*/
+/*
+background: rgb(226, 240, 251);
+background: -moz-linear-gradient(0deg, rgb(226, 240, 251) 0%, rgb(125, 169, 230) 100%);
+background: -webkit-linear-gradient(0deg, rgb(226, 240, 251) 0%, rgb(125, 169, 230) 100%);
+background: -o-linear-gradient(0deg, rgb(226, 240, 251) 0%, rgb(125, 169, 230) 100%);
+background: -ms-linear-gradient(0deg, rgb(226, 240, 251) 0%, rgb(125, 169, 230) 100%);
+background: linear-gradient(0deg, rgb(226, 240, 251) 0%, rgb(125, 169, 230) 100%);*/
+
+/*Blue to Sky Blue*/
+/*
+background: rgb(225, 240, 251);
+background: -moz-linear-gradient(0deg, rgb(225, 240, 251) 30%, rgb(178, 219, 245) 70%);
+background: -webkit-linear-gradient(0deg, rgb(225, 240, 251) 30%, rgb(178, 219, 245) 70%);
+background: -o-linear-gradient(0deg, rgb(225, 240, 251) 30%, rgb(178, 219, 245) 70%);
+background: -ms-linear-gradient(0deg, rgb(225, 240, 251) 30%, rgb(178, 219, 245) 70%);
+background: linear-gradient(0deg, rgb(225, 240, 251) 30%, rgb(178, 219, 245) 70%);*/
+
+/*Black to Gray*/
+/*background: rgb(75, 75, 75);
+background: -moz-linear-gradient(180deg, rgb(75, 75, 75) 30%, rgb(153, 153, 153) 70%);
+background: -webkit-linear-gradient(180deg, rgb(75, 75, 75) 30%, rgb(153, 153, 153) 70%);
+background: -o-linear-gradient(180deg, rgb(75, 75, 75) 30%, rgb(153, 153, 153) 70%);
+background: -ms-linear-gradient(180deg, rgb(75, 75, 75) 30%, rgb(153, 153, 153) 70%);
+background: linear-gradient(270deg, rgb(75, 75, 75) 30%, rgb(153, 153, 153) 70%);*/
+
+/*Dark to light green*/
+background: rgb(71, 100, 118);
+background: -moz-linear-gradient(180deg, rgb(71, 100, 118) 30%, rgb(118, 153, 173) 70%);
+background: -webkit-linear-gradient(180deg, rgb(71, 100, 118) 30%, rgb(118, 153, 173) 70%);
+background: -o-linear-gradient(180deg, rgb(71, 100, 118) 30%, rgb(118, 153, 173) 70%);
+background: -ms-linear-gradient(180deg, rgb(71, 100, 118) 30%, rgb(118, 153, 173) 70%);
+background: linear-gradient(270deg, rgb(71, 100, 118) 30%, rgb(118, 153, 173) 70%);
+
+
+
+}
+#rightcontent
+{
+  float:right;
+  width:85%;
+  height:90%;
+  
+  position:fixed;
+  top:0px;
+  right:0px;
+
+}
+#footer
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2A2A2A;
+    margin-top: 20px;
+}
+.treeroot
+{
+    width: 100%;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom-style: ridge;
+    border-bottom-width: 2px;
+    border-bottom-color: #666666;
+    color: #FFFFFF;
+}
+.treenode
+{
+    width: 100%;
+    padding: 3px;
+    color: #FFFFFF;
+    font-weight:bold;
+    font-size:14px;
+}
+.treeselected
+{
+    background-color: #CCCCFF;
+    color: #800000;
+}
+.nodeLevel1
+{
+    font: 13px Arial,Sans-Serif;
+    border-bottom: double 1px gray; /* background: #333333 url(images/cyan.png) repeat-x left top;*/
+    height: 25px;
+    width: 100%;
+    padding-left: 5px;
+    color: #FFFFFF;
+    font-weight: bold; /*background: rgb(165, 186, 239);
+    background: -moz-linear-gradient(0deg, rgb(165, 186, 239) 39%, rgb(205, 222, 250) 91%);
+    background: -webkit-linear-gradient(0deg, rgb(165, 186, 239) 39%, rgb(205, 222, 250) 91%);
+    background: -o-linear-gradient(0deg, rgb(165, 186, 239) 39%, rgb(205, 222, 250) 91%);
+    background: -ms-linear-gradient(0deg, rgb(165, 186, 239) 39%, rgb(205, 222, 250) 91%);
+    background: linear-gradient(0deg, rgb(165, 186, 239) 39%, rgb(205, 222, 250) 91%);*/
+} 
+.nodeLevel2
+{
+    font: 11px Arial,Sans-Serif;
+    border-bottom: double 1px gray;
+    margin: 0px;
+    padding-left: 10px;
+    background:  url(images/gradient_orange.JPG) repeat-x left top;
+    height: 25px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+} 
+.nodeLevel3
+{
+    font: 10px Arial, Sans-Serif;
+    border: 2px ridge gray;
+    margin: 0px;
+    padding-left: 15px;
+    background: #808080 url(images/grayMenuBar.PNG) repeat-x left top;
+    height: 25px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+} 
+
+ ::-webkit-scrollbar {
+    width: 12px;
+   
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(67, 44, 44, 0.9);
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 10px 0 6px rgba(67, 44, 44, 0.9);
+}
+.divhdrpath
+{
+   /* background-color: #606060;*/
+    background-image: url('../Images/datebgb.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #D8D8D8;
+    font-weight: bolder;
+    height:35px;
+    margin-left:0px;
+    margin-bottom:0px;
+    vertical-align:middle;
+    padding:15px 0px 0px 20px;
+    font-size:14px;
+    position:relative;
+    top: 0px;
+    left: -7px;
+    -moz-box-shadow: 8px 3px 5px #000000;
+-webkit-box-shadow: 8px 3px 5px #000000;
+box-shadow: 8px 3px 5px #000000;
+width:100%;
+}
+.a
+{
+    margin-top:45px;
+    padding:25px 0px 0px 20px;
+     font-weight: bolder;
+     font-size:14px;
+}
+.divhdrpath img
+{
+    float:left;
+    width:32px;
+    height:32px;
+    margin-left:2px;
+    
+}
+.divhdrpath div
+{
+    width:25%;
+    height:100%;
+    vertical-align:bottom;
+}
+.width
+{
+   width:75%; 
+}
+.floatleft
+{
+    float:left;
+}
+.floatright
+{
+    float:right;
+}

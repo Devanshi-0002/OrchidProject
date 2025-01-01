@@ -1,0 +1,252 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BlogMaster.master.cs" Inherits="BlogMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" href="img/z.png"/>
+  <title>Zenith Blogs</title>
+  <meta name="description" content=""/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css"/>
+  <!-- Main Style Sheet -->
+  <link rel="stylesheet" href="assets/css/master.css?v4"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style3.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700,800,900" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700,800,900" rel="stylesheet"/>
+  <!-- fontaswsome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+    <div class="topbarheader">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="mainlogo">
+              <asp:LinkButton ID="LinkButton1" OnClick="home_Click" runat="server"><img src="http://www.zenithholidays.com/images/logo_icon.png" class="" alt="" style="width:93%;"/></asp:LinkButton>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="headersearch">
+                <asp:TextBox ID="txt_search" placeholder="Search.." runat="server"></asp:TextBox>
+                <%--<input type="text" name="search" placeholder="Search.."/>--%>
+                <asp:Button ID="btn_search" CssClass="searchbutton" runat="server" Text="Search"  OnClick="btn_search_Click"/>
+                  <%--<button type="button" class="searchbutton" name="button">Search</button>--%><br/>
+                <p style="color:#eee; font-size:10px; font-style:italic;">ex: Place, Package, Destinations,Offers,Travel Tips</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="header-rightside">
+              <div class="social-icons">
+                <a href="https://www.facebook.com/zenithleisureholidays/" class="social-icons-new"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/zenitholidays" class="social-icons-new"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               <%-- <a href="#" class="social-icons-new"><i class="fa fa-linkedin" aria-hidden="true"></i></a>--%>
+                <a href="https://plus.google.com/+ZenithholidaysIndia" class="social-icons-new"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UCDMpGfPzQBCD7Z2RwlTrtHQ" class="social-icons-new"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+               <%-- <a href="#" class="social-icons-new"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>--%>
+              </div>
+              <ul class="menu-under-icon">
+                <!-- <li><a href="#">About</a></li>
+              <li><a href="#">Athors</a></li>
+              <li><a href="#">Press</a></li> -->
+                <p class="text-left" style="margin:0 0 0 5px; font-size:12px;"><span style="color:#f5c315">PH:</span> +918100667733</p>
+                <p class="text-left" style="margin:0 0 0 5px; font-size:13px;"><span style="color:#f5c315">Email:</span> web@zenithholidays.com</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manubar">
+        <nav class="navbar navbar-default navbar-default-new">
+      <div class="container">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav nav-pills">
+          <li class="active"><asp:LinkButton ID="home" OnClick="home1_Click" runat="server">Home</asp:LinkButton></li>
+          <%--<li><a href="#">Zenith News</a></li>--%>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Category <b class="caret"></b></a>
+            <ul class="dropdown-menu" id="menu1">
+             <li><asp:LinkButton ID="btn_customized" OnClick="btn_customized_Click" runat="server">Customized Holiday <i class="icon-arrow-right"></i></asp:LinkButton></li>
+             <li><asp:LinkButton ID="btn_grp_hld" runat="server" OnClick="btn_grp_hld_Click">Group Holidays</asp:LinkButton></li>
+             <li> <asp:LinkButton ID="btn_hnymoon" runat="server" OnClick="btn_hnymoon_Click">Honeymoon</asp:LinkButton></li>             
+             <li> <asp:LinkButton ID="btn_mice" runat="server" OnClick="btn_mice_Click">MICE Tours</asp:LinkButton></li>
+             <li> <asp:LinkButton ID="btn_nt" runat="server" OnClick="btn_nt_Click">News & Trending</asp:LinkButton></li>
+             <li> <asp:LinkButton ID="btn_th" runat="server" OnClick="btn_th_Click">Theme Holidays</asp:LinkButton></li>
+             <li> <asp:LinkButton ID="btn_wt" runat="server" OnClick="btn_wt_Click">Weekend Tours</asp:LinkButton></li>
+           </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Gallery</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Travel Tips</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Incredible India</a>
+          </li>
+           <%-- <li class="dropdown">
+                                        <a href="#">Zenith Offers</a>
+                                    </li>--%>
+          <%--<li class="dropdown">
+            <a href="http://zenithholidays.com/Contactus.aspx">Contact Us</a>
+          </li>
+          <li class="specialmenu">
+            <a href="#" class="blink">Special Offers</a>
+          </li>--%>
+        </ul>
+      </div>
+          </div>
+            </nav>
+    </div>
+            </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+          
+        </asp:ContentPlaceHolder>
+        <section>
+    <footer>
+      <div class="footer-area">
+        <div class="container">
+          <%--<div class="row" style="margin-bottom:30px;">
+            <div class="col-md-3 col-sm-6">
+              <div class="special-offer1">
+                <h3>Special<span>Off</span></h3>
+                <h4>On Selected Domestic Package</h4>
+                <p>Valid On For Till 31st June</p>
+                <a href="http://zenithholidays.com">Book Now</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="special-offer2">
+                <h3><span>50%</span>Off</h3>
+                <h4>Over 50% Off of International Packages</h4>
+                <p>Valid On For Till 31st June</p>
+                <a href="http://zenithholidays.com">Book Now</a>
+              </div>
+            </div>
+            <div class="col-md-6" style="margin-top:20px;">
+              <iframe width="560" height="180" src="https://www.youtube.com/embed/u3Tl1izpDeE" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>--%>
+          <div class="row footer-area-sec">
+            <div class="col-md-3">
+              <h4>Zenith Leisure Holidays Ltd</h4>
+              <p style="font-size:12px;">Zenith Leisure Holidays Ltd, founded in the year 1997 is one of India’s leading travel companies that offers an array of services to its guests. Today, it is the most trusted travel partner and has set itself up as a brand that believes in the fact that ‘THE JOURNEY IS MORE IMPORTANT THAN THE DESTINATION’. </p>
+            </div>
+            <div class="col-md-3">
+              <h4>Address & Contact info</h4>
+              <p>Annapurna Building - 1st Floor 68 Ballygunge Circular Rd Kolkata – 700 019</p>
+              <p>Phone: +91-8100667733
+                <br/> Email: web@zenithholidays.com</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Support & Help</h4>
+              <ul class="two-columns">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ </a></li>
+                <li><a href="#">Feedbacks </a></li>
+                <li><a href="#">Blog Use </a></li>
+                <li><a href="#">Cases </a></li>
+                <li><a href="#">Discount </a></li>
+                <li><a href="#">Vacations </a></li>
+                <li><a href="#">Offers </a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Follow With us</h4>
+              <%--<p>Sed pharetra faucibus neque, sed volutpat mi aliquam non. Etiam congue aliquet ullamcorper. </p>--%>
+              <ul class="footer-socialmedia">
+                <li><a href="https://www.facebook.com/zenithleisureholidays/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <li><a href="https://twitter.com/zenitholidays"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <!--<li><a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+  </a></li>-->
+                <li><a href="https://plus.google.com/+ZenithholidaysIndia"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <li><a href="https://www.youtube.com/channel/UCqr94GaS9Fv4icIvN_QLFCA"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <p>Copyrights @ 2017 Zenithholidays.com. All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+    </div>
+    </form>
+         <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script language="javascript">
+        function fbshareCurrentPage() {
+            window.open("https://www.facebook.com/sharer/sharer.php?u=" + escape(window.location.href) + "&t=" + document.title, '',
+            'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+            return false;
+        }
+</script>
+    <script language="javascript">
+        function tweetCurrentPage() {
+            window.open("https://twitter.com/share?url=" + escape(window.location.href) + "&text=" + document.title, '',
+              'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+            return false;
+        }
+</script>
+    <script>
+        window.___gcfg = {
+            lang: 'en-US',
+            parsetags: 'onload'
+        };
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <%--<script language="javascript">
+        //gplusShare.onclick = function ()
+        function gplusShare()
+        {
+            window.open("https://plus.google.com/share?url=" + currentURL, "", "height=550,width=525,left=100,top=100,menubar=0");
+            return false;
+        }
+    </script>--%>
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-118676497-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>   
+
+    
+</html>

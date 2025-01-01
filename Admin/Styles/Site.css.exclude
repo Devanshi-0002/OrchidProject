@@ -1,0 +1,858 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top:5px;
+    color:#669999;
+    width: 858px;
+}
+
+h3
+{
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 99.5%;
+    background-color:White;
+    margin: 5px auto 0px auto;
+    border: 1px solid #496077;
+    padding:0px;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px;
+    margin: 12px 0px 8px 0px;
+    min-height: 520px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px ;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:White;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+/*
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+*/
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.marginauto
+{
+    margin-left:auto;
+    margin-right:auto;
+  
+}
+.pnlfrmvwImg
+{
+    width: 650px;
+    height:280px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+       background-image: url('../images/bg-tally-4.jpg');
+       border:1px solid;
+}
+/************** Author: " Vishal " ********************/
+.mychecks .buttons
+{
+    display: block;
+    min-width: 60px;
+    height: 25px;
+    margin: 0px 2px 0px 2px;
+    padding: 5px 8px 3 8px; /* background: #bd5e54; /* Old browsers */ /*background: -moz-linear-gradient(top, #bd5e54 0%, #90322a 60%); /* FF3.6+ */ /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bd5e54), color-stop(60%,#90322a)); /* Chrome,Safari4+ */ /* background: -webkit-linear-gradient(top, #bd5e54 0%,#90322a 60%); /* Chrome10+,Safari5.1+ */ /* background: -o-linear-gradient(top, #bd5e54 0%,#90322a 60%); /* Opera11.10+ */ /* background: -ms-linear-gradient(top, #bd5e54 0%,#90322a 60%); /* IE10+ */ /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BD5E54', endColorstr='#90322A',GradientType=0 ); /* IE6-9 */ /* background: linear-gradient(top, #bd5e54 0%,#90322a 60%); /* W3C */ /*background-position: center center;
+    background-image: url('../images/bggry.png');
+    background-repeat: repeat-x;border: 1px solid #5E1A14;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;*/
+    float: left;
+    color: #eee;
+width:140px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    white-space: nowrap;
+    background-color: #EEEEEE;
+}
+.mychecks .buttons:hover,
+.mychecks .buttons:focus,
+.mychecks .buttons.active
+{   color: #fff;
+    background-position: center center;
+    background-image: url('../images/bg.png');
+    background-repeat: repeat-x;
+    }
+#mychecks label
+{
+    float:left;
+    
+}
+#mychecks input
+{
+    float:right;
+    margin-right:10px;
+}
+.pnel label
+{
+    float:left;
+    margin-left:25px;
+}
+ .pnel input
+{
+    float:right;
+    margin-right:10px;
+}
+h1
+{
+    margin: 0px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    background-position: center center;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+    padding: 3px 0px 5px 10px;
+}
+h2
+{
+    margin: 0px 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-position: center center;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+   /* border-radius: 5px 10px 5px 10px;*/
+    padding: 1px 50px 5px 15px;
+}
+  .textboxesad
+{
+    float: left;
+    width: 290px;
+    padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #000000;
+}
+.textboxesl
+{
+    float: left;
+    width: 200px;
+    padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #000000;
+}
+  
+
+.ddlstyle
+{
+    float: left;
+    width: 160px;
+    padding: 3px 3px 3px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 23px;
+}
+.ddlstylegrd
+{
+   
+    width: 170px;
+    padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 11px;
+    line-height: 14px;
+}
+   .vr
+{
+    height: auto;
+        border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #ffffff;
+}
+.divbox
+{
+    height:50px;
+    margin:5px auto;
+    padding:5px;
+}
+.divbox1
+{
+    height:auto;
+    margin:5px auto;
+    padding:5px;
+}
+
+.cpHeader
+{
+   
+    font: bold 11px auto "Trebuchet MS" , Verdana;
+    cursor: pointer;
+    margin: 0px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-position: center center;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat:repeat-x ;
+    background-color:#9ED2F1;
+    padding: 3px 0px 5px 10px;
+}
+.ModalPopupBG
+{
+    background-color: #999999;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+.frmvw
+{
+    width: 90%;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #D6D6D6;
+}
+.pnlfrmvw
+{
+   width: 90%;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+
+.floatrght
+        {
+            float:right;
+        }
+ /* 
+ hr
+{
+    height:-7px;
+    margin: 3px 2px;
+    padding: 2px 20px 5px 5px;
+    border-radius: 5px 10px 5px 10px;
+    
+}
+/************** Author: " Swati " *******************
+.mychecks span
+{
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #993333;
+    background-color: #E9E7E8;
+    
+} */
+.mychecks label
+{
+    float: left;
+    margin-left: 5px;
+    color: /*padding-right: 20px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #ffffff;*/ #333333;
+    font-weight: normal;
+} 
+.mychecks input
+{
+    float: right;
+    margin-right: 10px;
+    
+} 
+.btnstyle {
+    display:block;
+    min-width: 60px;
+    padding: 0 8px;
+    min-height:22px;
+    background-position:  50% top;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+    border: 1px solid #5E1A14;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    float:left;
+    color: #eee;
+    text-shadow: #222 0 1px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 85%;
+    white-space: nowrap;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    height: 19px;
+}
+.btnstyle:hover,
+.btnstyle:focus,
+.btnstyle.active {
+  
+    color: #fff;
+    background-position: center center;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+}
+
+.btnstylel {
+    display:block;
+    min-width: 60px;
+    padding: 0 8px;
+
+    min-height:22px;
+    background-position:  50% top;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+    border: 1px solid #5E1A14;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #eee;
+    text-shadow: #222 0 1px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 85%;
+
+    white-space: nowrap;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    }
+.btnstylel:hover,
+.btnstylel:focus,
+.btnstylel.active {
+  
+    color: #fff;
+    background-position: center center;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+}
+
+.btnstylegrd {
+    display:block;
+    
+    margin: 3px 2px;
+    padding: 1px 5px;
+
+  
+    background-position:  top;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+    border: 1px solid #5E1A14;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    float:left;
+    color: #eee;
+    text-shadow: #222 0 1px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 70%;
+
+    white-space: nowrap;
+}
+.btnstylegrd:hover,
+.btnstylegrd:focus,
+.btnstylegrd.active 
+{
+    color: #fff;
+    background-position: center center;
+    background-image: url('../images/grid_header.jpg');
+    background-repeat: repeat-x;
+}
+legend
+{
+    font-size: 13px;
+    margin-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #666666;
+}
+.messagebox
+{
+    background-image: url('../Images/msgbox.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.text
+{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #666699;
+    color: #FFFFCC;
+}
+.lebel1
+{
+    float:left;
+}
+.divlogin
+{ 
+  width:500px;
+  height:225px;
+  margin-right: auto;
+  margin-left: auto; 
+  padding:10px;
+  }
+.logindiv
+{
+    background-position: right center;
+    height: 180px;
+    margin-left: 20px;
+    width:480px;
+    margin-top: 20px;
+    padding-top:15px;
+    font-size: 14px;
+    background-image: url('../images/login.png');
+    background-repeat: no-repeat;
+}
+.textEntry1
+{
+    padding: 4px 7px 4px 8px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+.passwordEntry1 
+{
+    padding: 4px 7px 4px 8px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+
+.contentall
+{
+    min-height: 545px;
+    height: auto;
+    background-image: url('../images/bg.gif');
+    background-repeat: repeat-x;
+    background-color: #CCE3F3;
+}
+/****** Left Side accordion menu ********/
+  .accordion 
+{  
+            width:100%;  
+}  
+.accordionHeader
+{
+    background-position: center center;
+    border: 1px solid #2F4F4F;
+    color: white;
+    /*background-color: #333333;*/
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+    background-image: url('../images/bgd.png');
+    background-repeat: repeat-x;
+}  
+.accordionHeaderSelected
+{
+    background-position: center center;
+    border: 1px solid #2F4F4F;
+    color: #ffffff; /*background-color: #666699;*/
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+    background-image: url('../images/bgd.png');
+    background-repeat: repeat-x;
+}  
+.accordionContent
+{
+    background-color: #99CCFF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 0px;
+    padding-top: 0px;
+}  
+.accordionContent p
+{
+    /* background-position: center center;*/
+    margin: 0px;
+    padding: 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #333333;
+    text-decoration: none;
+    background-color: #E0E0E0;
+}
+.accordionContent p a
+{   height:28px;
+    background-position: left center;
+    text-decoration: none;
+    padding-left: 35px;
+    color: #333333;
+    background-image: url('../images/chkimg.png');
+    background-repeat: no-repeat;
+}
+.accordionContent p a:hover
+{
+    background-position: left center;
+    color: #000066;
+    background-image: url('../images/chkimghr.png');
+    background-repeat: no-repeat;
+}
+
+/**************************************************************************/
+ .divmaindivison
+{
+    padding: 10px;
+    max-width: 100%;
+    min-height: 600px;
+    height:auto;
+    border: 1px solid #999999;
+}
+ .divmaindiviso
+{
+    padding: 10px;
+    max-width: 100%;
+    min-height: 600px;
+   
+   
+}
+.fullcontent
+{
+    width:100%;
+    margin:auto;
+    
+}
+.table
+{
+    width:100%;
+     height: 655px;
+    border:0 none #FFF;
+}
+.tdleft
+{
+    width:15%;
+    height:650px;
+    
+    
+}
+.tdright
+{
+    width:84%;
+    height:650px;
+    
+   
+   
+}
+.trbotborder
+{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #666666;
+}
+.trrghtborder
+{
+     border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: #666666;
+}
+.treeroot
+{
+    width: 100%;
+    padding: 3px;
+    background-color: #FFFFCC;
+    font-weight:bold;
+    font-size:14px;
+}
+.treenode
+{
+    width: 100%;
+    padding: 3px;
+    background-color: #FFFFCC;
+    font-weight:bold;
+    font-size:14px;
+}
+.treeselected
+{
+    background-color: #CCCCFF;
+   /* background-position: left center;
+    color: #000066;
+    background-image: url('../images/chkimghr.png');
+    background-repeat: no-repeat;*/
+}
+
+

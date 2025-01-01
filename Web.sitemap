@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="default.aspx" title=""  description="Home Page">
+    <siteMapNode url="fitpackage-details.aspx" title="package details"  description="package details" />
+    <!--<siteMapNode url="holidays-in-india.aspx" title="holidays in india"  description="holidays-in-india" />-->
+    <siteMapNode url="gitpackage-details.aspx" title="fitpackage details"  description="fitpackage-details" />
+    <siteMapNode url="international-holidays.aspx" title="international-holidays.aspx"  description="international-holidays.aspx" />
+    <siteMapNode url="holidays-in-india.aspx" title="holidays in india"  description="holidays-in-india" />
+  </siteMapNode>
+</siteMap>
+
+
+<!--<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Home.aspx" title="Home"  description="Home Page" >
+    <siteMapNode url="Services.aspx" title="Services"  description="Services Page">
+      <siteMapNode url ="Consulting.aspx" title="Consulting"  description="Consulting Page"></siteMapNode>
+      <siteMapNode url ="Outsourcing.aspx" title="Outsourcing"  description="Outsourcing Page"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="About.aspx" title="About"  description="About Us Page" />
+    <siteMapNode url="Contact.aspx" title="Contact"  description="Contact Us Page" />
+  </siteMapNode>
+</siteMap>-->
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+-->
+<!-- DataBinding Sitemap Source XML File -->
+<!--
+<siteMap>
+  <siteMapNode nodeID="Node1" title="Home" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node1">
+    <siteMapNode nodeID="Node2" title="Products, Solutions and Services" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node2">
+      <siteMapNode nodeID="Node3" title="Business Index" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node3">
+      </siteMapNode>
+      <siteMapNode nodeID="Node4" title="Consumer" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node4">
+      </siteMapNode>
+      <siteMapNode nodeID="Node5" title="Buy from Us" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node5">
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode nodeID="Node6" title="Investor Relations" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node6">
+      <siteMapNode nodeID="Node7" title="Key Information" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node7">
+        <siteMapNode nodeID="Node8" title="Company Structure" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node8">
+        </siteMapNode>
+        <siteMapNode nodeID="Node9" title="Key Figures" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node9">
+        </siteMapNode>
+        <siteMapNode nodeID="Node10" title="Shareholder Structure" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node10">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode nodeID="Node11" title="Financial Reports" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node11">
+        <siteMapNode nodeID="Node12" title="Financial Reports 2004" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node12">
+        </siteMapNode>
+        <siteMapNode nodeID="Node13" title="Financial Reports 2003" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node13">
+        </siteMapNode>
+        <siteMapNode nodeID="Node14" title="Financial Reports 2002" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node14">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode nodeID="Node15" title="About Us" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node15">
+      <siteMapNode nodeID="Node16" title="Key Information" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node16">
+        <siteMapNode nodeID="Node17" title="Key Figures" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node17">
+        </siteMapNode>
+        <siteMapNode nodeID="Node18" title="Company Structure" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node18">
+        </siteMapNode>
+        <siteMapNode nodeID="Node19" title="Managing Board" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node19">
+        </siteMapNode>
+        <siteMapNode nodeID="Node20" title="Supervisory Board" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node20">
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode nodeID="Node21" title="Our Businesses" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node21">
+        <siteMapNode nodeID="Node22" title="Automation and Control" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node22">
+        </siteMapNode>
+        <siteMapNode nodeID="Node23" title="Transportation" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node23">
+        </siteMapNode>
+        <siteMapNode nodeID="Node24" title="Medical" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node24">
+        </siteMapNode>
+        <siteMapNode nodeID="Node25" title="Affiliates" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node25">
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode nodeID="Node26" title="Contact Us" url="~/Samples/Sitemap/Feature/DataBinding/DataBinding.aspx?NodeID=Node26">
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>-->

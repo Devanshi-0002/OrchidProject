@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+using System.Web.Services;
+using System.Configuration;
+using System.Data.SqlClient;
+public partial class _Default2 : System.Web.UI.Page
+{
+    [WebMethod]
+    public static string[] GetCustomers(string prefix)
+    {
+        List<string> customers = new List<string>();
+        using (SqlConnection conn = new SqlConnection())
+        {
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            using (SqlCommand cmd = new SqlCommand())
+            {
+                cmd.CommandText = "select Destination,Destination from Destination_Search where Destination like @SearchText + '%'";
+                cmd.Parameters.AddWithValue("@SearchText", prefix);
+                cmd.Connection = conn;
+                conn.Open();
+                using (SqlDataReader sdr = cmd.ExecuteReader())
+                {
+                    while (sdr.Read())
+                    {
+                        customers.Add(string.Format("{0}-{1}", sdr["Destination"], sdr["Destination"]));
+                    }
+                }
+                conn.Close();
+            }
+        }
+        return customers.ToArray();
+    }
+    protected void Submit(object sender, EventArgs e)
+    {
+        string customerName = Request.Form[txtSearch.UniqueID];
+        string customerId = Request.Form[hfCustomerId.UniqueID];
+        ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Name: " + customerName + "\\nID: " + customerId + "');", true);
+    }
+    //[System.Web.Script.Services.ScriptMethod()]
+    //[System.Web.Services.WebMethod]
+    //public static List<string> Listofdestination(string prefixText)
+    //{
+    //    using (SqlConnection sqlconn = new SqlConnection("Data Source=104.199.183.69;Initial Catalog=zenithholidaysdb;User ID=zenithholidaysdb_user;Password=Z%$site0@2016; Connect Timeout=1500"))
+    //    {
+    //        sqlconn.Open();
+    //        SqlCommand cmd = new SqlCommand("select Destination from Destination_Search where Destination like '" + prefixText + "%' ", sqlconn);
+    //        cmd.Parameters.AddWithValue("@Pkg_name", prefixText);
+    //        SqlDataAdapter da = new SqlDataAdapter(cmd);
+    //        DataTable dt = new DataTable();
+    //        da.Fill(dt);
+    //        List<string> Place = new List<string>();
+    //        for (int i = 0; i < dt.Rows.Count; i++)
+    //        {
+    //            Place.Add(dt.Rows[i]["Destination"].ToString());
+    //        }
+    //        return Place;
+    //    }
+    //}
+}

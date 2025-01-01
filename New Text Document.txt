@@ -1,0 +1,71 @@
+<section class="extra-box-area">
+		<div class="container ">
+			<div class="extra-box-content">
+				<div class="extra-box-content-extra">
+				<div class="row custom-row">
+					<div class="col-sm-12 col-md-6 col-lg-6 border-right">
+						<div class="row">
+							<div class="before-footer before-footer-new text-left pb-0">
+								<h2>Need Help?</h2>
+							</div>
+							<div class="col-md-7">
+						<div class="before-footer confused">
+							<h4 class="font-weight-bold">Holidays In India</h4>
+						<h5>Give us a call:</h5>
+							<h5>(+91) 8100 667733</h5>
+							
+						</div>
+							</div>
+							<div class="col-auto">
+								<img src="img/icons/phoneicon.png" alt="" class="w-50 mt-4"/>
+							</div>
+						</div>
+						<h3 class="text-center font-weight-bold" >OR</h3>
+						<div class="row">
+							<div class="col-md-7">
+								<div class="before-footer confused">
+								
+								<h5>Write Us Email: </h5>
+								<h5>web@zenithholidays.com</h5>
+							</div>
+							</div>
+							<div class="col-auto">
+								<img src="img/icons/emailicon.png" alt="" class="w-50 mt-4"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-5 col-lg-5">
+						<div class="before-footer before-footer-new text-left pb-0 mb-sm-4 ml-sm-4">
+							<h2 >Get Started Here</h2>
+						</div>
+						<div class="before-footer ml-sm-4">
+							
+							<div class="row">
+								<div class="col-md-12">
+									<div class="input-group mb-sm-4">
+										<input type="text" class="form-control rounded-0" placeholder="Email Id" aria-describedby="validationTooltipUsernamePrepend" required>
+										<div class="input-group-prepend">
+											<span class="input-group-text home-subs-icon"><i class="fas fa-envelope fa-lg"></i></span>
+										</div>
+									</div>
+									
+								</div>
+								<div class="col-md-12">
+
+									<div class="input-group mb-4">
+										<input type="text" class="form-control rounded-0" placeholder="Phone No" aria-describedby="validationTooltipUsernamePrepend" required>
+										<div class="input-group-prepend">
+											<span class="input-group-text home-subs-icon"><i class="fas fa-phone fa-lg"></i></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn home-subs-icon text-dark rounded-0">SUBSCRIBE NOW</button>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+	</section>

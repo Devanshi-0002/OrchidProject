@@ -1,0 +1,59 @@
+<table class="table">
+<tbody>
+<tr>
+<td width="64">
+<p>FLIGHT</p>
+</td>
+<td width="64">
+<p>CCU</p>
+</td>
+<td width="64">
+<p>BKK</p>
+</td>
+</tr>
+<tr>
+<td width="64">
+<p>TG</p>
+</td>
+<td width="64">
+<p>0200</p>
+</td>
+<td width="64">
+<p>0610</p>
+</td>
+</tr>
+<tr>
+<td width="64">
+<p>&nbsp;</p>
+</td>
+<td width="64">
+<p>&nbsp;</p>
+</td>
+<td width="64">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="64">
+<p>FLIGHT</p>
+</td>
+<td width="64">
+<p>BKK</p>
+</td>
+<td width="64">
+<p>CCU</p>
+</td>
+</tr>
+<tr>
+<td width="64">
+<p>TG</p>
+</td>
+<td width="64">
+<p>2345</p>
+</td>
+<td width="64">
+<p>0045</p>
+</td>
+</tr>
+</tbody>
+</table>

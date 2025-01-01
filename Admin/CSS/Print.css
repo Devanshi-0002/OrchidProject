@@ -1,0 +1,80 @@
+﻿ 
+ *
+ {
+     font-size:10px;
+     font-family:Calibri;
+ } 
+.style2
+{
+    width: 238px;
+}
+.style3
+{
+    width: 150px;
+}
+.style4
+{
+    width: 68px;
+}
+.style6
+{
+    width: 45%;
+}
+GridView td
+{
+    border:1px solid #333333;
+}
+.over
+{
+    overflow:scroll;
+}
+.style7
+{
+    width: 150px;
+           
+}
+.style8
+{
+    width: 238px;
+            
+}
+.style9
+{
+    width: 68px;
+            
+}
+.style10
+{
+            
+}
+.style11
+{
+    width: 5px;
+}
+.style12
+{
+    width: 116px;
+}
+.style13
+{
+    width: 142px;
+}
+.style14
+{
+    width: 119px;
+}
+.style15
+{
+    width: 137px;
+}
+.style16
+{
+    width: 91px;
+}
+        
+.divbox1
+{
+    height:auto;
+    margin:5px auto;
+    padding:5px;
+}

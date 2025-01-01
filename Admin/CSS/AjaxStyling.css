@@ -1,0 +1,154 @@
+.CSajax__calendar .ajax__calendar_container {padding:3px;cursor:default;width:180px;font-size:10px;text-align:center;font-family:tahoma,verdana,helvetica;}
+.CSajax__calendar .ajax__calendar_body {min-height:150px;min-width:180px;position:relative;overflow:hidden;margin:auto;}
+.CSajax__calendar .ajax__calendar_days {top:0px;left:0px;min-height:150px;min-width:180px;position:absolute;text-align:center;margin:auto;}
+.CSajax__calendar .ajax__calendar_months{ top:0px;left:0px;min-height:150px;min-width:180px;position:absolute;text-align:center;margin:auto;}
+.CSajax__calendar .ajax__calendar_years {top:0px;left:0px;min-height:150px;min-width:180px;position:absolute;text-align:center;margin:auto;}
+.CSajax__calendar .ajax__calendar_container TABLE {padding:0px;margin:2px;font-size:10px;}
+.CSajax__calendar .ajax__calendar_container TD {padding:2px;font-size:10px;}
+.CSajax__calendar .ajax__calendar_header {height:20px;width:100%;}
+.CSajax__calendar .ajax__calendar_prev {cursor:pointer;width:15px;height:15px;float:left;background-repeat:no-repeat;background-position:50% 50%;background-image:url(../images/navigate-left16.png);}
+.CSajax__calendar .ajax__calendar_next {cursor:pointer;width:15px;height:15px;float:right;background-repeat:no-repeat;background-position:50% 50%;background-image:url(../images/navigate-right16.png);}
+.CSajax__calendar .ajax__calendar_title {cursor:pointer;font-weight:bold; margin-left:15px; margin-right:15px;}
+.CSajax__calendar .ajax__calendar_footer {height:15px;}
+.CSajax__calendar .ajax__calendar_today {cursor:pointer;padding-top:1px; margin-top:0px;}
+.CSajax__calendar .ajax__calendar_dayname
+{
+    height: 17px;
+    width: 17px;
+    text-align: right;
+    padding: 0 2px 0 2px;
+}
+.CSajax__calendar .ajax__calendar_day {height:18px;width:18px;text-align:right;padding:0px 2px 2px 0px;cursor:pointer;}
+.CSajax__calendar .ajax__calendar_month {height:40px;width:38px;text-align:center;cursor:pointer;overflow:hidden;}
+.CSajax__calendar .ajax__calendar_year {height:40px;width:38px;text-align:center;cursor:pointer;overflow:hidden;}
+
+.CSajax__calendar .ajax__calendar_container {border:1px solid #646464;background-color:#ffffff;color:#000000;}
+.CSajax__calendar .ajax__calendar_footer {border-top:1px solid #f5f5f5;}
+.CSajax__calendar .ajax__calendar_dayname {border-bottom:1px solid #f5f5f5;}
+.CSajax__calendar .ajax__calendar_day {border:1px solid #ffffff;}
+.CSajax__calendar .ajax__calendar_month {border:1px solid #ffffff;}
+.CSajax__calendar .ajax__calendar_year {border:1px solid #ffffff;}
+
+.CSajax__calendar .ajax__calendar_active .ajax__calendar_day {padding:2px;background-color:#edf9ff;border-color:#0066cc;color:#0066cc;}
+.CSajax__calendar .ajax__calendar_active .ajax__calendar_month {background-color:#edf9ff;border-color:#0066cc;color:#0066cc;}
+.CSajax__calendar .ajax__calendar_active .ajax__calendar_year {background-color:#edf9ff;border-color:#0066cc;color:#0066cc;}
+
+.CSajax__calendar .ajax__calendar_other .ajax__calendar_day {padding:2px;background-color:#ffffff;border-color:#ffffff;color:#646464;}
+.CSajax__calendar .ajax__calendar_other .ajax__calendar_year {padding:2px;background-color:#ffffff;border-color:#ffffff;color:#646464;}
+
+.CSajax__calendar .ajax__calendar_hover .ajax__calendar_day {padding:2px;background-color:#edf9ff;border-color:#daf2fc;color:#0066cc;}
+.CSajax__calendar .ajax__calendar_hover .ajax__calendar_month {background-color:#edf9ff;border-color:#daf2fc;color:#0066cc;}
+.CSajax__calendar .ajax__calendar_hover .ajax__calendar_year {background-color:#edf9ff;border-color:#daf2fc;color:#0066cc;}
+
+.CSajax__calendar .ajax__calendar_hover .ajax__calendar_title {padding:2px;color:#0066cc;}
+.CSajax__calendar .ajax__calendar_hover .ajax__calendar_today {padding:2px;color:#0066cc;}
+
+
+/*************************************************************************/
+
+.AutoExtender
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: normal;
+    border: solid 1px #006699;
+    line-height: 20px;
+    padding: 10px;
+    background-color: White;
+    margin-left: 10px;
+}
+.AutoExtenderList
+{
+    border-bottom: dotted 1px #006699;
+    cursor: pointer;
+    color: Maroon;
+}
+.AutoExtenderHighlight
+{
+    color: White;
+    background-color: #006699;
+    cursor: pointer;
+}
+#divwidth
+{
+    width: 300px !important;
+}
+#divwidth div
+{
+    width: 300px !important;
+}
+#divwidth2
+{
+    width: 300px !important;
+}
+#divwidth2 div
+{
+    width: 300px !important;
+}
+#divwidth1
+{
+    width: 300px !important;
+}
+#divwidth1 div
+{
+    width: 300px !important;
+}
+#divwidth4
+{
+    width: 300px !important;
+}
+#divwidth4 div
+{
+    width: 300px !important;
+}
+        
+/**************************************************/
+        
+.VeryPoorStrength
+{
+    background: Red;
+    color: White;
+    font-weight: bold;
+    height: 1px;
+}
+.WeakStrength
+{
+    background: Gray;
+    color: White;
+    font-weight: bold;
+    height: 1px;
+}
+.AverageStrength
+{
+    background: orange;
+    color: black;
+    font-weight: bold;
+    height: 1px;
+}
+.GoodStrength
+{
+    background: blue;
+    color: White;
+    font-weight: bold;
+    height: 1px;
+}
+.ExcellentStrength
+{
+    background: Green;
+    color: White;
+    font-weight: bold;
+    height: 1px;
+}
+.BarBorder
+{
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 1px;
+    padding: 0px;
+}
+.Bar
+{
+    padding: 0px;
+    height: 1px;
+}

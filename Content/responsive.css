@@ -1,0 +1,236 @@
+﻿@media(max-width: 575px) {
+	.col {
+		flex-basis: auto;
+	}
+	.col-sm-6 {
+		width: 50%;
+	}
+	/*    .col-sm-4 {*/
+	/*        width: 33.33%;*/
+	/*    }*/
+	.col-sm-12 {
+		width: 100%;
+	}
+	.mini-search-row {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+}
+@media(max-width: 991px) {
+	.featured-destinations-box-area li,.featured-destinations-box-area li:nth-child(5),.featured-destinations-box-area li:nth-child(7),.featured-destinations-box-area li:nth-child(6) {
+		width: 100%;
+	}
+	.destination-package-box:hover{
+		box-shadow:none;
+	}
+	footer {
+		padding-top: 25px;
+	}
+	.holidays-body-text-area h1{
+		font-size: 200%
+	}
+	.dastination-package-price-area {
+		padding-top: 15px
+	}
+	.dastination-highlight-list {
+		margin-left: 0;
+		height: auto;
+	}
+	.checkout-main-body {
+		width: 100%;
+	}
+	.modal-title {
+		font-size: 150%;
+	}
+	.card {
+		margin-bottom: 25px !important;
+	}
+	.card-body {
+		padding-bottom: 0;
+	}
+	.tab-pane {
+		padding: 0;
+	}
+	.nav.nav-tabs li {
+		padding: 5px;
+	}
+	.dastination-nav-link.active {
+		padding: 6px 10px;
+		border-bottom: 1px solid red !important;
+	}
+	.package-price-box {
+		width: 85%;
+		left: 0;
+		right: 0;
+		top: 50%;
+		margin: auto;
+	}
+	.dastination-nav-tabs {
+		justify-content: center;
+		margin-bottom: 25px;
+	}
+	.dastination-package-details {
+		height: auto;
+		box-shadow: none;
+		border-bottom: 1px solid #999;
+		padding: 0;
+		margin-top: 5px;
+	}
+	.dastination-package-box:hover {
+		border: none;
+		box-shadow: none;
+	}
+	.dastination-tab-content {
+		margin: 0;
+		border: none;
+		/*        padding: 0*/
+	}
+	.dastination-package-box li {
+		padding: 0
+	}
+	.dastination-sidebar,.dastination-tab-panel {
+		width: 100%;
+		padding: 0;
+	}
+	.dastination-nav-tabs li {
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	/*.dastination-package-main {
+		padding-left: 15px;
+		padding-right: 15px;
+	}*/
+	.dastination-nav-link {
+		width: auto;
+		padding: 6px 15px;
+		top: 0;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.holiday-theme-area {
+		height: auto;
+	}
+	.Zenith-Populer-Packages {
+		width: 100%;
+		height: auto;
+	}
+	.view-all-area-homepage {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.promo-title {
+		font-size: 17px;
+	}
+	.low-padding {
+		padding: 0 15px;
+	}
+	.clear-left-padding {
+		padding-left: 15px;
+	}
+	.clear-right-padding {
+		padding-right: 15px;
+	}
+	.extra-box-content-extra {
+		width: 100%;
+		padding: 0
+	}
+	/*.input-group {
+		margin-bottom: 15px;
+	}*/
+	.header-search-area {
+		position: relative;
+	}
+	.nav-pills-new {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+	}
+	.tab-content-custom {
+		width: 100%;    
+	}
+	.custom-btn-danger {
+		margin: auto;
+		width: 100%;
+	}
+	.custom-btn-primary{
+		margin: auto;
+		width: 100%;
+	}
+	.custom-area {
+		padding-bottom: 0;
+		border-bottom: 1px solid #555;
+	}
+	.menu-area {
+		width: 100%;
+		text-align: right;
+	}
+	.top-menu-row {
+		position: relative;
+		z-index: 99;
+		background: #fff;
+	}
+	.manu-nav-custom-link,.manu-nav-custom-link-for-myaccount {
+		color: #000;
+	}
+	.body-content {
+		justify-content: center;
+		left: 0;
+		right: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		top: -15%;
+		height: 100%;
+		justify-content: center;
+	}
+	.extra-box-content-extra img {
+		float: right;
+	}
+
+	.custom-slider-image {
+		height: 350px;
+	}
+	.navbar-custom {
+		display: block;
+	}
+	.navbar-nav-custom {
+		display: inline-block;
+	}
+	.navbar-nav-custom li {
+		display: inline-block;
+		margin: 0 5px;
+	}
+	.dropdown-md-new {
+		position: absolute !important;
+		left: -170px;
+	}
+	.home-theme-box-new,.why-choose-us-area {
+		padding: 15px 10px;
+	}
+	.ml-sm-4 {
+		margin-left: 0 !important;
+	}
+	.fixed {
+		position: relative !important;
+	}
+	.nav-link-custom-after:after {
+		display: none;
+	   
+	}
+	.nav-link-custom-after {
+		padding: 10px 0px 10px 5px;
+		margin: 0 5px;
+		font-size: 13px;
+	}
+	.d-sm-block{ display: none;}
+	.dastination-slider-price-enquiry-btn, .dastination-slider-price-book-btn {
+		width: auto;
+	}
+	.itn-title-tab-date,.itn-title-tab,.itn-title-tab-time,.dastination-nav-link {
+		font-size: 15px;
+	}
+	.input-group-custom{ width: 100%;}
+
+}

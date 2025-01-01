@@ -1,0 +1,289 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="InnerMasterPage.master.cs" Inherits="InnerMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KJGJS2S');</script>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/GlobalStyle.css?ver424" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href="~/Content/responsive.css?ver50" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700,800,900" rel="stylesheet">
+    <script>$(function () { $("#datepicker").datepicker(); });</script>
+    <link href="img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <style>
+        body, html {
+            font-family: 'Raleway',sans-serif !important;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+    </style>
+    <script>!function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js'); fbq('init', '512941962439806'); fbq('track', 'PageView');</script>
+    <noscript>
+        <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=512941962439806&ev=PageView&noscript=1" />
+    </noscript>
+    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-118676497-1', 'auto'); ga('send', 'pageview');</script>
+    <script type="text/javascript">var google_conversion_id = 861332077; var google_custom_params = window.google_tag_params; var google_remarketing_only = true;</script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+        <div style="display: inline;">
+            <img height="1" width="1" style="border-style: none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/861332077/?guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-861332077"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-861332077');</script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-customerchat" attribution="install_email" page_id="151122584941146"></div>
+    <form runat="server">
+        <asp:ScriptManager ID="jhi" runat="server" EnablePageMethods="True"></asp:ScriptManager>
+        <script src="../Scripts/jquery-3.3.1.js"></script>
+        <script src="../Scripts/modernizr-2.6.2.js"></script>
+        <script src="../Scripts/respond.js"></script>
+        <script src="../Scripts/popper.js"></script>
+        <script src="../Scripts/bootstrap.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+        <section>
+            <div class="top-menu-row inner-top-menu-row" id="task_flyout">
+                <%--id="scrolldiv"--%><div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4 col-4">
+                            <a class="nav-link active nav-link-custom" href="../Default.aspx">
+                                <img src="../Image/orchidglobal.png" alt="Logo" class="img-responsive Logo" /></a>
+                        </div>
+                        <div class="col-md-9 col-sm-8 col-8 clear-padding ">
+                            <div class="menu-area float-right">
+                                <nav class="navbar navbar-custom navbar-expand-lg">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-align-justify fa-2x"></i></button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav navbar-nav-custom mr-auto">
+                                            
+                                            <li class="nav-item"><a class="nav-link manu-nav-custom-link active text-black" style="border-bottom: 2px solid #ff0020;" href="../holidays.aspx" target="">Holidays</a> </li>
+                                            <li class="nav-item"><a class="nav-link manu-nav-custom-link text-black" href="../customized_package/index.aspx" target="">Create Package</a> </li>
+                                            <li class="nav-item"><a class="nav-link manu-nav-custom-link text-black" href="../HotelSearch.aspx" target="">Hotels</a> </li>
+                                            <li class="nav-item "><a class="nav-link manu-nav-custom-link text-black" href="../SightSeeingSearch.aspx" target="">Sightseeing</a> </li>
+                                            <li class="nav-item"><a class="nav-link manu-nav-custom-link text-black" href="../TransferSearch.aspx" target="">Transfer</a> </li>
+                                             <li class="nav-item "><a class="nav-link manu-nav-custom-link text-black" href="../contact_us">Contact Us</a></li>
+
+                                            <li class="nav-item dropdown nav-dropdown-new text-black" id="limenu_myAccount" runat="server" visible="true"><a class="nav-link dropdown-toggle manu-nav-custom-link-for-myaccount text-black" href="#" id="navbarDropdown111" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-bottom: 2px solid #ff0020;">My Account</a><div class="dropdown-menu dropdown-md-new" aria-labelledby="navbarDropdown111">
+                                                <div class="container clear-padding">
+                                                    <div class="col-md-12 clear-padding">
+                                                        <%--<p class="menu-contact-headline"><i class="fas fa-lock fa-2x"></i></p>--%><div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="p-3 bg-white" style="box-shadow: 0 0 10px #888888">
+                                                                    <div id="login-dp">
+                                                                        <div class="form-group"><a href="modalRegistration" class="btn btn-danger rounded-0 btn-block" data-toggle="modal" data-target="#modalLogin">LOGIN</a> <%--<a href="#" class="btn btn-danger btn-lg btn-block" data-toggle="modal" data-target="#modalRegistration">Register Here</a>--%></div>
+                                                                        <div class="form-group">
+                                                                            <p class="h5 m-0 text-center">OR</p>
+                                                                            <a href="modalRegistration" class="btn btn-danger rounded-0 btn-block" data-toggle="modal" data-target="#modalRegistration">SIGN UP</a> <%--<a href="#" class="btn btn-danger btn-lg btn-block" data-toggle="modal" data-target="#modalRegistration">Register Here</a>--%>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </li>
+                                            <li class="nav-item dropdown nav-dropdown-new" id="limenu_userProfile" runat="server" visible="false"><a class="nav-link dropdown-toggle manu-nav-custom-link-for-myaccount text-black" href="#" id="navbarDropdown112" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi <span id="username" runat="server"></span></a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown1"><a class="dropdown-item" href="../My-Bookings.aspx"><i class="fas fa-caret-right fa-lg text-light-low"></i>My Bookings</a> <a class="dropdown-item" href="../my-profile.aspx"><i class="fas fa-caret-right fa-lg text-light-low"></i>My Profile</a> <a class="dropdown-item" href="../logout.aspx"><i class="fas fa-caret-right fa-lg text-light-low"></i>Logout</a></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%--user Registation--%><div class="modal animated fadeInLeft delay-0s" id="modalRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content package-details-modal-for-enquiry">
+                    <div class="modal-header text-white bg-danger pt-2 pb-2 pl-4 pr-4">
+                        <h2 class="modal-title h3">Register Here</h2>
+                        <button type="button" class="close pt-4" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="First Name" ID="txtFirstName"></asp:TextBox>
+                            </div>
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Last Name" ID="txtLastName"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Email Id" TextMode="Email" ID="txtEmailId"></asp:TextBox>
+                            </div>
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Mobile Number" ID="txtPhoneNumber" TextMode="Phone"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Password" TextMode="Password" ID="txtPassword"></asp:TextBox>
+                            </div>
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Country" ID="txtCountry"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col">
+                                <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Date Of Birth" ToolTip="Date of Birth" TextMode="Date" ID="txtDateOfBirth"></asp:TextBox>
+                            </div>
+                            <div class="form-group col text-center">
+                                <asp:LinkButton CssClass="btn btn-lg btn-danger" runat="server" ID="btnRegistationSave" Text="Register Now" OnClick="btnRegistationSave_Click" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%--user Login--%><div class="modal animated fadeIn delay-0s" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content package-details-modal-for-enquiry">
+                    <div class="modal-header text-white bg-danger pt-2 pb-2 pl-4 pr-4">
+                        <h2 class="modal-title h3">Login Here</h2>
+                        <button type="button" class="close pt-4" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="p-3 bg-white" style="box-shadow: 0 0 10px #888888">
+                                    <div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control cus-frm-crnt" id="useremailid" runat="server" placeholder="Email address" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control cus-frm-crnt" id="userPassword" runat="server" placeholder="Password" required="required" /><br />
+                                            <div class="help-block text-right">
+                                                <asp:LinkButton ID="lnk_Forgetpassword" runat="server" Text="Forget the password ?" OnClick="lnk_Forgetpassword_Click"></asp:LinkButton>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <asp:LinkButton ID="lbtn_signin" runat="server" Text="SIGN IN" class="btn btn-danger btn-block " OnClick="lbtn_signin_Click"></asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pl-sm-0 pr-sm-0">
+            <div class="row">
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="true" SiteMapProvider="" StartingNodeUrl="~/Web.sitemap" />
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" > " RenderCurrentNodeAsLink="false"></asp:SiteMapPath>
+                <hr />
+                <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                <div class="bg-white w-100 border-top">
+                    <div class="container ">
+                        <img src="../img/memberslist.png" class="mt-5 mb-4 img-fluid" alt="Member List" />
+                    </div>
+                </div>
+                <footer>
+                    <div>
+                        <div class="container container-new">
+                            <div class="row m-0">
+                                <div class="col-md-3">
+                                    <h1 class="ist-footer-title">ORCHIDGLOBAL</h1>
+                                    <ul class="footer-menu">
+                                        <%--<li class="znslsh">ORCHIDGLOBAL</li>--%>
+                                        <li>
+                                            <p class="pull-left">Phone &nbsp;:</p>
+                                            <p class="pull-left" itemprop="telephone" style="width: 190px">
+                                                INDIA & SOUTH ASIA
+                                                <br />
+                                                +91 6290952054
+                                                <br>
+                                                BANGLADESH
+                                                <br />
+                                                +880 1766189138
+                                                <br>
+                                                REST OF THE WORLD
+                                                <br />
+                                                +91 6290952054
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-auto">
+                                    <h2 class="footer-title">ABOUT ORCHIDGLOBAL</h2>
+                                    <ul class="footer-menu">
+                                        <li><a href="About.aspx">About</a></li>
+                                        <%--<li><a href="#">Awards Gallery</a></li>--%> <%--<li><a href="#">Zenith Offers</a></li><li><a href="#">Careers</a></li>--%> <%--our_career.aspx--%><li><a href="termsandcondition.aspx">Terms & Conditions</a></li>
+                                        <li><a href="how_to_book.aspx">How To Book</a></li>
+                                        <%--<li><a href="our_team.aspx">Our Team</a></li>--%><%--<li><a href="zen_khusi.aspx">Zen Khushi</a></li>--%>
+                                    </ul>
+                                </div>
+                                <div class="col-md-auto">
+                                    <h2 class="footer-title">OUR PRODUCTS & SERVICES</h2>
+                                    <ul class="footer-menu">
+                                        <li><%--<a href="https://www.payumoney.com/webfronts/#/index/ZenithLeisureHolidaysLtd">--%>Make Payments<%--</a>--%></li>
+                                        <%--<li><a href="#">Visa Forms</a></li>--%> <%--<li><a href="#">Visa Documents Required</a></li>--%>
+                                        <li><a href="mice.aspx">Corporate Travel(MICE)</a></li>
+                                        <%--<li><a href="mice">MICE</a></li>--%>
+                                    </ul>
+                                </div>
+                                <div class="col-md-auto">
+                                    <h2 class="footer-title">HELP</h2>
+                                    <ul class="footer-menu">
+                                        <%--li><a href="contact_us.aspx">Enquiry</a></li>--%> <%--<li><a href="contact_us.aspx">Contact Us</a></li><li><a href="#">FeedBack</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Sitemap</a></li>--%>
+                                        <li><a href="##">Blog</a></li>
+                                    </ul>
+                                </div>
+                                <%--<div class="col-sm-2"></div>--%>
+                            </div>           `                       
+                            <br />
+                            <br />
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4 col-lg-3"><span class="footer-email"><i class="fas fa-envelope fa-lg"></i>
+                                    <a href="mailto:enquiry@orchiddmc.net">enquiry@orchiddmc.net</a></span></div>
+                                <div class="col-sm-6 col-md-4 col-lg-3"><span class="footer-phone">24X7 <i class="fas fa-phone fa-lg"></i>+91 6290952054</span></div>
+                                <div class="col-sm-6 col-md-4 col-lg-3"><span class="fotter-social-media">Connect with us: <a href="https://www.facebook.com/orchid.holidays2" target="_blank">
+                                    <i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                                    <a href="https://twitter.com/DmcOrchid" target="_blank">
+                                    <i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCG8JjyLm1z4MnaMab9Ib25Q" target="_blank">
+                                    <i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></a><a href="#" target="_blank">
+                                    <i class="fab fa-google-plus-square fa-lg" aria-hidden="true"></i></a><a href="https://www.linkedin.com/company/orchidglobal" target="_blank">
+                                    <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a><a href="https://www.instagram.com/orchid_global" target="_blank">
+                                    <i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a></span></div>
+                                <div class="col-sm-6 col-md-4 col-lg-3">
+                                    <span class="footer-payment">WE ACCEPT
+                                    <img src="img/payu.jpg" alt="" /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="w-100 bg-white">
+                    <%--<div class="container "><div class="row"><p class="col-sm-12 footer-payment">Members of</p> <br /><div class="col-xs-12 col-lg-3 col-sm-3 clear-padding"> <img src="imgimg3.png?version1.1" alt=""></div><div class="col-xs-12 col-lg-2 col-sm-3 clear-padding"> <img src="imgimg4.png?version1.1" alt=""></div><div class="col-xs-12 col-lg-2 col-sm-3 clear-padding"> <img src="imgimg5.png?version1.2" alt=""></div><div class="col-xs-12 col-lg-2 col-sm-3 clear-padding"> <img src="imgimg6.png?version1.1" alt=""></div><div class="col-xs-12 col-lg-1 col-sm-3 clear-padding"> <img src="imgimg7.png?version1.1" alt=""></div><div class="col-xs-12 col-lg-2 col-sm-3 clear-padding"> <img src="imgimg8.png?version1.1" alt=""></div></div></div>--%><div class="container-fluid">
+                        <div class="row">
+                            <p class="footr-copyright text-center">&copy; <%: DateTime.Now.Year %> - Orchidglobal.net</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">function viewpoint() { (function ($) { var element = $('.scrolldiv'), originalY = element.offset().top, bottom; var topMargin = 10; element.css('position', 'relative'); $(window).on('scroll', function (event) { var scrollTop = $(window).scrollTop(); element.stop(false, false).animate({ top: scrollTop < originalY ? 0 : scrollTop - originalY + topMargin }, 300); }); })(jQuery); } $(document).ready(function () { var viewportWidth = $(window).width(); if (viewportWidth < 991) { $(".scrolldiv").removeClass("scrolldiv").addClass("scrolldivv"); } else { viewpoint(); } });</script>
+</body>
+</html>

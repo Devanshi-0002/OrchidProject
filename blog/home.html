@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/z.png">
+  <title>Zenith Blogs</title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+  <!-- Main Style Sheet -->
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style3.css" />
+  <!-- Google Font -->
+  <link <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+  <!-- fontaswsome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <header>
+    <div class="topbarheader">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="mainlogo">
+              <a href="home.html"><img src="http://www.zenithholidays.com/images/logo_icon.png" class="" alt="" style="width:93%;"></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="headersearch">
+              <form>
+                <input type="text" name="search" placeholder="Search.."><button type="button" class="searchbutton" name="button">Search</button><br/>
+                <p style="color:#eee; font-size:10px; font-style:italic;">ex: Place, Package, Destinations,Offers,Travel Tips</p>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="header-rightside">
+              <div class="social-icons">
+                <a href="#" class="social-icons-new"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="social-icons-new"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" class="social-icons-new"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#" class="social-icons-new"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#" class="social-icons-new"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a href="#" class="social-icons-new"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+              </div>
+              <ul class="menu-under-icon">
+                <!-- <li><a href="#">About</a></li>
+              <li><a href="#">Athors</a></li>
+              <li><a href="#">Press</a></li> -->
+                <p class="text-left" style="margin:0 0 0 5px; font-size:12px;"><span style="color:#f5c315">PH:</span> 00 00 000 000</p>
+                <p class="text-left" style="margin:0 0 0 5px; font-size:13px;"><span style="color:#f5c315">Email:</span> web@zenithholidays.com</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manubar">
+      <div class="container">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="#">Zenith News</a></li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Travel Themes <b class="caret"></b></a>
+            <ul class="dropdown-menu" id="menu1">
+              <li>
+                <a href="#">2-level Menu <i class="icon-arrow-right"></i></a>
+                <ul class="dropdown-menu sub-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Gallery</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Travel Tips</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Incredible India</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Zenith Offers</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="specialmenu">
+            <a href="#" class="blink">Special Offers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid sliderarea">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner carousel-inner-new">
+          <div class="item active">
+            <img src="img/1.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+                <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="img/2.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+                <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="img/3.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+               <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="img/4.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+               <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="img/5.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+               <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="img/6.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+                <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+          <div class="item">
+            <img src="img/7.jpg">
+            <div class="carousel-caption homepageslidingcaption">
+              <h3>Headline Headline Headline Headline Headline Headline</h3>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+              <div class="col-md-12">
+                <i class="fa fa-calendar" aria-hidden="true"></i> 19th June | <i class="fa fa-user" aria-hidden="true"></i> Admin
+              </div>
+              <div class="col-md-12">
+                <a href="innerpage.html">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="sliderthum sliderthum-nav">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Slider 1<small>Lorem
+                ipsum dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="1"><a href="#">Slider 2<small>Lorem ipsum
+                dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="2"><a href="#">Slider 3<small>Lorem ipsum
+                dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="3"><a href="#">Slider 4<small>Lorem ipsum
+                dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="4"><a href="#">Slider 5<small>Lorem ipsum
+                      dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="5"><a href="#">Slider 6<small>Lorem ipsum
+                            dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="6"><a href="#">Slider 7<small>Lorem ipsum
+                                  dolor sit</small></a></li>
+        </ul>
+      </div>
+      <!-- End Carousel -->
+    </div>
+  </header>
+  <section class="body-content">
+    <div class="container">
+      <div class="themecategoty">
+        <div class="row">
+          <ul class="ch-grid">
+            <div class="col-xs-3">
+              <li>
+                <div class='bordered large-square'>
+                  <div class="hovereffect">
+                    <div class="caption-area">
+                      <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                      <span>HoneyMoon</span>
+                    </div>
+                    <a href="#"><img src="images\6.jpg" alt="" class="img-responsive"></a>
+
+                    <div class="overlay">
+                      <h2>Tours & Travels</h2>
+                      <a class="info" href="#">Click Here to Enter</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="col-md-6">
+              <h1>OUR All POPULAR THEMES</h1>
+              <h3>What's your reason to travel?</h3>
+              <i class="fa fa-binoculars fa-3x" aria-hidden="true" style="display:block;margin-bottom:40px;"></i>
+              <a href="#" class="morethemes">More Themes</a>
+            </div>
+            <div class="col-xs-3">
+              <li>
+                <div class='bordered large-square'>
+                  <div class="hovereffect">
+                    <div class="caption-area">
+                      <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                      <span>HoneyMoon</span>
+                    </div>
+                    <a href="#"><img src="images\5.jpg" alt="" class="img-responsive"></a>
+                    <div class="overlay">
+                      <h2>Tours & Travels</h2>
+                      <a class="info" href="#">Click Here to Enter</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="ch-grid">
+            <div class="col-xs-3">
+              <li>
+                <div class='bordered large-square'>
+                  <div class="hovereffect">
+                    <div class="caption-area">
+                      <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                      <span>HoneyMoon</span>
+                    </div>
+                    <a href="#"><img src="images\4.jpg" alt="" class="img-responsive"></a>
+                    <div class="overlay">
+                      <h2>Tours & Travels</h2>
+                      <a class="info" href="#">Click Here to Enter</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="col-xs-3">
+              <li>
+                <div class='bordered large-square'>
+                  <div class="hovereffect">
+                    <div class="caption-area">
+                      <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                      <span>HoneyMoon</span>
+                    </div>
+                    <a href="#"><img src="images\3.jpg" alt="" class="img-responsive"></a>
+                    <div class="overlay">
+                      <h2>Tours & Travels</h2>
+                      <a class="info" href="#">Click Here to Enter</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="col-xs-3">
+              <li>
+                <div class='bordered large-square'>
+                  <div class="hovereffect">
+                    <div class="caption-area">
+                      <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                      <span>HoneyMoon</span>
+                    </div>
+                    <a href="#"><img src="images\2.jpg" alt="" class="img-responsive"></a>
+                    <div class="overlay">
+                      <h2>Tours & Travels</h2>
+                      <a class="info" href="#">Click Here to Enter</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="col-xs-3">
+              <li>
+                <div class='bordered large-square'>
+                  <div class="hovereffect">
+                    <div class="caption-area">
+                      <i class="fa fa-heart fa-1x" aria-hidden="true"></i>
+                      <span>HoneyMoon</span>
+                    </div>
+                    <a href="#"><img src="images\1.jpg" alt="" class="img-responsive"></a>
+                    <div class="overlay">
+                      <h2>Tours & Travels</h2>
+                      <a class="info" href="#">Click Here to Enter</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="homepage-latest-news">
+    <div class="container-fluid">
+      <div class="">
+        <div class="col-md-10">
+          <h1 class="headline-post"><i class="fa fa-lightbulb-o latest-news-icon" aria-hidden="true"></i> News & Trending</h1>
+        </div>
+        <div class="col-md-2">
+          <nav>
+            <ul class="control-box pager Carousel-pointer-homepage">
+              <li><a data-slide="prev" href="#Carousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+              <li><a data-slide="next" href="#Carousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-xs-12 related-post">
+          <div class="carousel slide" id="Carousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <ul class="thumbnails">
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /Slide1 -->
+              <div class="item">
+                <ul class="thumbnails">
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /Slide2 -->
+              <div class="item">
+                <ul class="thumbnails">
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-sm-3">
+                    <div class="fff">
+                      <div class="thumbnail">
+                        <div class="latest-post-category">
+                          <a href="#"><span>category</span></a>
+                        </div>
+                        <div class="latest-post-type">
+                          <span><i class="fa fa-picture-o fa-lg" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="#"><img src="img/1.jpg" alt="" class="img-responsive"></a>
+                      </div>
+                      <div class="caption">
+                        <span class="caption-date"><i class="fa fa-calendar" aria-hidden="true"></i> March 9, 2017</span>
+                        <span class="caption-author">Suprakash Das <a href="#"><img src="img/icon.jpg" alt=""></a></span>
+                        <h4>Nullam Condimentum Nibh Etiam Sem</h4>
+                        <a class="btn btn-mini" href="#">» Read More</a>
+                        <span class="latest-post-caption-view-count"><i class="fa fa-eye" aria-hidden="true"></i> 522</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /Slide3 -->
+            </div>
+            <!-- /.control-box -->
+          </div>
+          <!-- /#Carousel -->
+        </div>
+        <!-- /.col-xs-12 -->
+      </div>
+    </div>
+  </section>
+  <section>
+  </section>
+  <section>
+    <footer>
+      <div class="footer-area" style="display:;">
+        <div class="container">
+          <div class="row" style="margin-bottom:30px;">
+            <div class="col-md-3">
+              <div class="special-offer1">
+                <h3>Special<span>Off</span></h3>
+                <h4>On Selected Domestic Package</h4>
+                <p>Valid On For Till 31st June</p>
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="special-offer2">
+                <h3><span>50%</span>Off</h3>
+                <h4>Over 50% Off of International Packages</h4>
+                <p>Valid On For Till 31st June</p>
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+            <div class="col-md-6" style="margin-top:20px;">
+              <iframe width="560" height="180" src="https://www.youtube.com/embed/u3Tl1izpDeE" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row footer-area-sec">
+            <div class="col-md-3">
+              <h4>Zenith Leisure Holidays Ltd</h4>
+              <p>Sed pharetra faucibus neque, sed volutpat mi aliquam non. Etiam congue aliquet ullamcorper. Aliquam mattis mauris ligula, non facilisis odio cursus sed. </p>
+            </div>
+            <div class="col-md-3">
+              <h4>Address & Contact info</h4>
+              <p>Annapurna Building - 1st Floor 68 Ballygunj Circular Rd Kolkata – 700 019</p>
+              <p>Phone: 033 40143901-23
+                <br> Email: Kolkata@zenithholidays.com</p>
+            </div>
+            <div class="col-md-3">
+              <h4>Support & Help</h4>
+              <ul class="two-columns">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ </a></li>
+                <li><a href="#">Feedbacks </a></li>
+                <li><a href="#">Blog Use </a></li>
+                <li><a href="#">Cases </a></li>
+                <li><a href="#">Discount </a></li>
+                <li><a href="#">Vacations </a></li>
+                <li><a href="#">Offers </a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Follow With us</h4>
+              <p>Sed pharetra faucibus neque, sed volutpat mi aliquam non. Etiam congue aliquet ullamcorper. </p>
+              <ul class="footer-socialmedia">
+                <li><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <li><a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <li><a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+  </a></li>
+                <li><a href="#"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <p>Copyrights @ 2017 Zenithholidays.com. All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.79639.js"></script>
+  <!-- Custom Script area -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#myCarousel').carousel({
+        interval: 4000
+      });
+
+      var clickEvent = false;
+      $('#myCarousel').on('click', '.sliderthum-nav a', function() {
+        clickEvent = true;
+        $('.sliderthum-nav li').removeClass('active');
+        $(this).parent().addClass('active');
+      }).on('slid.bs.carousel', function(e) {
+        if (!clickEvent) {
+          var count = $('.sliderthum-nav').children().length - 1;
+          var current = $('.sliderthum-nav li.active');
+          current.removeClass('active').next().addClass('active');
+          var id = parseInt(current.data('slide-to'));
+          if (count == id) {
+            $('.sliderthum-nav li').first().addClass('active');
+          }
+        }
+        clickEvent = false;
+      });
+    });
+  </script>
+</body>
+</html>

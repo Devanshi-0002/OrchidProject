@@ -1,0 +1,396 @@
+﻿
+/*-----------CREATED BY NEERAJ -------------------------------*/
+
+*body   
+{
+    background:white;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color:green;
+}*
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color:#669999;
+    width: 279px;
+    height: 24px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top:5px;
+    color:#000000;
+    height: 13px;
+}
+
+h3
+{
+    font-family:Tahoma;
+    font-size: 1.3em;
+    color:#669999;
+    font-weight: bold;
+    height: 22px;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+.page
+{
+    width: 100%;
+    background-color:White;
+    margin:2px auto 0px auto;
+    border: 1px solid #496077;
+    padding:0px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.header1
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header1 h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px;
+    margin: 12px 0px 8px 0px;
+    min-height: 520px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px ;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink1
+{
+   /* background-color:#ffffff;
+    width:80%;*/
+   
+}
+
+div.menu1
+{
+    padding: 4px 0px 4px 8px;
+    font-size:15Px;
+    font-variant:small-caps;
+    font-style:italic;
+}
+
+div.menu1 ul
+{
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+   
+}
+
+div.menu1 ul li a, div.menu1 ul li a:visited
+{
+    background-color:Silver;
+    border: 1.80px yellow solid;
+    color:white;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 10px;
+    text-decoration:blink;
+    white-space:nowrap;
+   
+}
+
+div.menu1 ul li a:hover
+{
+    background-color:White;
+    color:green;
+    text-decoration:none;
+    font-size:15Px;
+}
+
+div.menu1 ul li a:active
+{
+    background-color: #465c71;
+    color:Black;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color:Black;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.marginauto
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+/*-----------------------new css--------------*/
+
+.table1 h2{
+	font-weight:bold;
+	font-size:20px;
+}
+
+.table.table1{
+	width:100%;
+	height:auto;
+    font-family:Arial;
+    font-size: 18px;
+    font-weight: normal;
+	color:#fff;
+    line-height: 1.7em;
+	background:#45a8df;
+    text-align:left;
+	padding:10px;
+}
+
+
+.td{ width:200px;
+	height:15px;
+	background-color:#444;
+    color:#000;
+    border-bottom:1px solid #444;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.39, rgb(189,189,189)),
+        color-stop(0.7, rgb(224,224,224))
+        );
+    background:-moz-linear-gradient(
+        center bottom,
+        rgb(189,189,189) 39%,
+        rgb(224,224,224) 70%
+        );
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #CCC;
+	padding:10px 0 0 10px;
+	
+}
+.td2{
+    width:auto;
+	background-color:#fff;
+    color:#000;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:normal;
+	padding:3px 0 3px 10px;
+    font-weight: bold; 
+}
+.textFIELD1
+{
+    padding: 3px 3px 3px 7px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    margin:3px 0 3px 10px;
+}
+
+.textfld2
+{
+	padding: 3px 3px 3px 7px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    margin:3px 0 3px 10px;
+}
+.ddlstyle2
+{ 
+    width:250px;
+    float: left;
+    padding: 3px 3px 3px 7px;
+    margin:3px 0 3px 10px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    line-height: 16px;
+}
+.textarea1{
+	width:220px;
+	height:60px;
+	margin:0px;
+	padding:0px;
+}
+ .lable
+ {
+    color:#104E8B;
+ }
+
+/*-----------CREATED BY NEERAJ -------------------------------*/
+
+

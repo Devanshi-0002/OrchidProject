@@ -1,0 +1,354 @@
+﻿*
+{
+    font-size:12px;
+    font-family: Calibri;
+    }
+    .divmain
+{
+   
+    padding: 10px;
+    min-width:70%;
+    max-width:100%;
+    height: 540px;
+    border: 1px solid #999999;
+
+}
+.first
+{
+    float: left;
+    width:60%;
+   /*  min-height: 350px;
+    max-height: 540px;
+  border: 1px solid #999999;*/
+
+}
+
+.sec
+
+{
+    margin-left:3px;
+    float: left;
+    width: 100%;
+    height: auto;
+    border: 1px solid #999999;
+        background-color: #EEEEEE;
+  
+}
+.secpnl
+
+{
+    margin-left:15px;
+    float: left;
+    width: 97%;
+    height: auto;
+    background-color: #EEEEEE;
+  
+}
+.sec1
+{
+    float:left;
+    width: 45%;
+    height: auto;
+    margin-left:2px;
+    border-style: none none none solid;
+    border-left-width: 2px;
+    border-left-color: #006699;
+}
+.divnewuser
+{
+
+    float: left;
+    width: 50%;
+    height: 350px;
+ 
+  
+}
+.textboxesml
+{
+    width: 55px;
+    padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.textboxesm
+{
+    width: 90px;
+    padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.divsearchdivision
+{
+    width:100%;
+    padding:0px;
+   height:35px;
+   background-color:#EEEEEE;
+   
+   }
+.textboxes
+{
+    width: 150px;
+    padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    /* -moz-box-shadow: 5px 5px 5px #000000;
+-webkit-box-shadow: 5px 5px 5px #000000;
+box-shadow: 3px 3px 3px #000000;*/
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
+}
+.textboxen
+{
+    width: 80px;
+   padding: 1px 3px 1px 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    /* -moz-box-shadow: 5px 5px 5px #000000;
+-webkit-box-shadow: 5px 5px 5px #000000;
+box-shadow: 3px 3px 3px #000000;*/
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-webkit-border-top-left-radius:5px;
+-webkit-border-top-right-radius:5px;
+-webkit-border-bottom-left-radius:5px;
+-webkit-border-bottom-right-radius:5px;
+}
+
+/*** For Division page ***/
+
+.divShwdivson
+{
+
+
+    width: 100%;
+    height: 250px;
+    padding-bottom:5px;
+
+}
+  
+  .divedit_divson
+{
+
+    float: left;
+    width: 100%;
+    height: 333px;
+    margin-left:0px;
+     margin-right:0px;
+
+
+
+}
+
+.marginauto
+{
+margin-left:auto;
+margin-right:auto;
+}
+  
+/*---------------------------Product group section..................*/
+
+.divShwpg
+{
+   
+
+    width: 100%;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:10px;
+}
+   
+.divsearchpg
+{
+    width: 100%;
+    padding: 5px;
+    height: 45px;
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #333333;
+    margin-bottom: 10px;
+}
+
+  
+  .divedit_pg
+{
+
+    float: left;
+    width: 100%;
+    height:324px;
+    margin-left:0px;
+    margin-right:0px;
+    padding:0px;
+
+}
+
+/*---------------------------section record..................*/
+
+
+.divmainsection
+{
+    padding: 10px;
+    max-width: 100%;
+    min-height: 600px;
+    height: auto;
+}
+.divShw_sectionrec
+{
+
+    width: 100%;
+    margin-bottom: 15px;
+} 
+.divsearchsection
+{
+    width:100%;
+    padding:0px;
+   height:50px;
+
+   
+   }
+     .divedit_sectionrec
+{
+
+    float: left;
+    width:100%;
+    height:auto;
+
+    padding:0px;
+
+}
+.textboxes1
+{
+    float:left;
+    width: 180px;
+    padding: 3px 3px 3px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+/*---------------------------Suppliers Brand record..................*/
+
+.divmainSuppliersBrand
+{
+    padding: 10px;
+    max-width: 100%;
+    min-height: 600px;
+    height: auto;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #999999;
+}
+.divShw_Suppliers_Brand
+{
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+
+}
+   
+.divsearchSup_Brandnd
+{
+    width:100%;
+    padding:0px;
+   height:50px;
+
+   
+   }
+     .divediSupp_Brand
+{
+
+    float: left;
+    width:100%;
+    height:auto;
+    padding:0px;
+
+}
+
+/*--------------------------Category record..................*/
+.divmainCategory
+{
+    padding: 10px;
+    max-width: 100%;
+    min-height: 500px;
+    height: auto;
+
+}
+.divShw_Category
+{
+    width: 100%;
+    height: 216px;
+    margin-bottom: 5px;
+}
+   
+.divsearchCategory
+{
+    width:100%;
+    padding:0px;
+   height:50px; 
+}
+     .diveditCategory
+{
+
+    float: left;
+    width:100%;
+    height:auto;
+    padding:0px;
+
+}
+.gridrowcategory
+{
+    background-image: url('../images/bg.png');
+    height:25px;
+    text-align:left;
+    padding-left:15px;
+    
+}
+
+/*---------------------------UNIT section..................*/
+.divmainUnit
+{
+    padding: 10px;
+    max-width: 100%;
+    min-height: 500px;
+    height: auto;
+
+}
+.divShw_Unit
+{
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+
+}
+   
+.divsearchUnit
+{
+    width:100%;
+    padding:0px;
+   height:50px;
+
+   
+   }
+     .diveditUnit
+{
+
+    float: left;
+    width:100%;
+    height:auto;
+
+    padding:0px;
+
+}

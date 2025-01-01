@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="keywords" content="Zenith" />
+    <meta name="description" content="" />
+    <meta name="author" content="Zenith" />
+    <link rel="shortcut icon" href="../img/favicon.gif" type="image/png" />
+    <title>::Orchid-Admin</title>
+    <!--icheck-->
+    <link href="css/minimal.css" rel="stylesheet" />
+    <link href="css/square.css" rel="stylesheet" />
+    <link href="css/red.css" rel="stylesheet" />
+    <link href="css/blue.css" rel="stylesheet" />
+    <!--dashboard calendar-->
+    <link href="css/clndr.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="css/morris.css" />
+    <!--common-->
+    <link href="css/style.css?v2" rel="stylesheet" />
+    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="CSS/Stylegrid.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/AjaxStyling.css" rel="stylesheet" />
+    <link href="CSS/PopUpStyle.css" rel="stylesheet" />
+    <script src="js/PopScript.js"></script>
+    <link href="CSS/jquery-te-1.4.0.css" rel="stylesheet" />
+    <%--<link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/GlobalStyle.css?ver10" rel="stylesheet" />--%>
+    <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link href="../img/favicon.png" rel="shortcut icon" type="image/x-icon" /><!-- Load jQuery JS -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Load jQuery UI Main JS  -->
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+
+    
+    <style type="text/css">
+        .panel {
+            margin-bottom: 20px;
+        }
+
+        .panel-body {
+            padding: 15px;
+        }
+
+        .table1 {
+            height: 280px;
+        }
+
+        .tbody {
+            height: 290px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    </style>
+    <style>
+        .inner_content {
+            padding: 5px;
+        }
+    </style>
+    <style>
+        td, th {
+            padding: 5px;
+            font-family: 'Bitter', serif;
+            font-size: 14px;
+        }
+
+        .for-height-new {
+            width: 25%;
+        }
+    </style>
+    <style type="text/css">
+        .grid {
+            width: 500px;
+        }
+
+            .grid th {
+                background-color: #007ee5;
+                color: #ffffff;
+            }
+
+            .grid tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+
+            .grid tr:nth-child(odd) {
+                background-color: #f1e6d5;
+            }
+
+            .grid td {
+                padding-left: 10px;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <div class="page-heading">
+            <h4 id="h4menuName" runat="server"></h4>
+        </div>
+    </asp:ContentPlaceHolder>
+</head>
+<body class="sticky-header left-side-collapsed">
+    <form id="form1" runat="server">
+
+
+        <asp:ScriptManager ID="scrmngr" runat="server">
+            <Services>
+                <asp:ServiceReference Path="Autocompletepgname.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <section>
+            <!-- left side start-->
+            <div class="left-side sticky-left-side">
+
+                <!--logo and iconic logo start-->
+                <%--<a href="Default.aspx"><img src="images/logo_icon.png" alt="" /></a>--%>
+
+                <div class="logo">
+                    <a href="Default.aspx">
+                        <img src="images/orchidglobal.png" alt="" style="" /></a>
+                </div>
+
+                <div class="logo-icon text-center">
+
+                    <a href="Default.aspx">
+                        <img src="images/orchidglobal.png" alt="" /></a>
+
+                </div>
+                <!--logo and iconic logo end-->
+
+                <div class="left-side-inner">
+
+                    <!-- visible to small devices only -->
+                    <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                        <h5 class="left-nav-title">Account Information</h5>
+                        <ul class="nav nav-pills nav-stacked custom-nav">
+                            <li><a href="Comming.aspx"><i class="fa fa-user"></i><span>Profile</span></a></li>
+                            <li><a href="Comming.aspx"><i class="fa fa-cog"></i><span>Change Password</span></a></li>
+                            <li><a href="logout.aspx"><i class="fa fa-sign-out"></i><span>Sign Out</span></a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="nav nav-pills nav-stacked custom-nav">
+                        <li><a href="Default.aspx"><i class="fa fa-home"></i><span>Home</span></a></li>
+                        <li class="nav-active"><a href="Country.aspx"><i class="fa fa-globe"></i><span>Add Country / State</span></a></li>
+                        <li class="nav-active"><a href="RoomType.aspx"><i class="fa fa-plane "></i><span>Add Room & Bording Point</span></a></li>
+                        <li class="nav-active"><a href="Destination.aspx"><i class="fas fa-map"></i><span>Destination</span></a></li>
+                        <li class="nav-active"><a href="Theme.aspx"><i class="fa fa-text-height"></i><span>Theme</span></a></li>
+                        <li class="nav-active"><a href="Addpackages.aspx"><i class="fas fa-suitcase"></i><span>Package Master</span></a></li>
+                        <li class="nav-active"><a href="PackageCost.aspx"><i class="fas fa-rupee-sign"></i><span>Package Cost</span></a></li>
+                        <li class="nav-active"><a href="Tax_Master.aspx"><i class="fa fa-paperclip"></i><span>Tax Master</span></a></li>
+                        <li class="nav-active"><a href="editpackage.aspx"><i class="fas fa-edit"></i><span>Update Package</span></a></li>
+                        <%--<li class="nav-active"><a href="UpdatePage.aspx"><i class="fa fa-file"></i><span>Update All Master Details</span></a></li>
+                        <li class="nav-active"><a href="Update-OverView.aspx"><i class="fa fa-eye"></i><span>Update Over View</span></a></li>
+                        <li class="nav-active"><a href="Update-Inclusion.aspx"><i class="fa fa-chain-broken"></i><span>Update Inclusion & Exclusion</span></a></li>
+                        <li class="nav-active"><a href="Update-Termcondition.aspx"><i class="fa fa-cogs"></i><span>Update Terms & Conditions</span></a></li>
+                        <li class="nav-active"><a href="UpdateImage.aspx"><i class="fa fa-image"></i><span>Update Image</span></a></li>
+                        <li class="nav-active"><a href="HomePageSlider.aspx"><i class="fa fa-sliders"></i><span>Home Page Slider</span></a></li>
+                        <li class="nav-active"><a href="Blog.aspx"><i class="fa fa-rss"></i><span>Blog</span></a></li>
+                        <li id="menuid" visible="false" runat="server" class="nav-active"><a href="MenuPage.aspx"><i class="fa fa-bars"></i><span>Menu Details</span></a></li>--%>
+                        <li><a href="logout.aspx"><i class="fas fa-power-off" style="color:red"></i><span >LogOut</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="header-section">
+                    <a class="toggle-btn menu-collapsed"><i class="fa fa-bars"></i></a>
+                    <div class="menu-right">
+                        <asp:Label ID="lblcompanyname" runat="server"></asp:Label>
+                        <ul class="notification-menu">
+                            <li>
+                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <img src="images/user-avatar.png" alt="" />
+                                    <b id="auser" runat="server"></b>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                                    <li><a href="Comming.aspx"><i class="fa fa-user"></i>Profile</a></li>
+                                    <li><a href="Comming.aspx"><i class="fa fa-cog"></i>Change Password</a></li>
+                                    <li><a href="logout.aspx"><i class="fa fa-sign-out"></i>Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="CPHMainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </section>
+        <%--<script src="js/jquery-1.10.2.min.js"></script>--%>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </form>
+</body>
+</html>

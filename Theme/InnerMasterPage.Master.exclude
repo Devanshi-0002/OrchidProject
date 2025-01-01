@@ -1,0 +1,427 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="InnerMasterPage.master.cs" Inherits="InnerMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %>Zenith Holidays</title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/GlobalStyle.css?ver10" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="../img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="../Content/responsive.css?ver13" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        attribution="install_email"
+        page_id="151122584941146">
+    </div>
+<form runat="server">
+<asp:ScriptManager ID="jhi" runat="server"></asp:ScriptManager>
+<script src="../Scripts/jquery-3.3.1.js"></script>
+<script src="../Scripts/modernizr-2.6.2.js"></script>
+<script src="../Scripts/respond.js"></script>
+<script src="../Scripts/popper.js"></script>
+<script src="../Scripts/bootstrap.js"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+
+
+<section>
+    <div class="top-menu-row inner-top-menu-row" id="task_flyout">
+        <%--id="scrolldiv"--%>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-sm-6">
+                    <a class="nav-link active nav-link-custom" href="../Default.aspx">
+                        <img src="../img/logo.png" alt="Zenith Logo" class="img-responsive zenith-log" /></a>
+                </div>
+                <div class="col-9 col-sm-6 clear-padding ">
+                    <div class="menu-area float-right">
+                        <nav class="navbar navbar-custom navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-align-justify fa-2x"></i>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav navbar-nav-custom mr-auto">
+                                    <li class="nav-item ">
+                                        <a class="nav-link text-black manu-nav-custom-link" href="holidays.aspx">Holidays</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle manu-nav-custom-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More
+                                        </a>
+                                        <div class="dropdown-menu dropdown-md-new" aria-labelledby="navbarDropdown1">
+                                            <a class="dropdown-item" href="mice"><i class="fas fa-caret-right fa-lg text-light-low"></i>Mice</a>
+                                            <a class="dropdown-item" href="contact_us"><i class="fas fa-caret-right fa-lg text-light-low"></i>Contact Us</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link manu-nav-custom-link" href="../blog">Blog</a>
+                                    </li>
+                                    <li class="nav-item dropdown nav-dropdown-new text-black" id="limenu_myAccount" runat="server" visible="true">
+										<a class="nav-link dropdown-toggle manu-nav-custom-link-for-myaccount text-black" href="#" id="navbarDropdown111" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+										<div class="dropdown-menu dropdown-md-new" aria-labelledby="navbarDropdown111">
+											<div class="container clear-padding">
+												<div class="col-md-12 clear-padding">
+													<%--<p class="menu-contact-headline"><i class="fas fa-lock fa-2x"></i></p>--%>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="p-3 bg-white" style="box-shadow: 0 0 10px #888888">
+																<div id="login-dp">
+																	<div class="form-group">
+																		<a href="modalRegistration" class="btn btn-danger rounded-0 btn-block" data-toggle="modal" data-target="#modalLogin">LOGIN</a>
+																		<%--<a href="#" class="btn btn-danger btn-lg btn-block" data-toggle="modal" data-target="#modalRegistration">Register Here</a>--%>
+																	</div>									<div class="form-group">
+
+																		<p class="h5 m-0 text-center">OR</p>
+																		<a href="modalRegistration" class="btn btn-danger rounded-0 btn-block" data-toggle="modal" data-target="#modalRegistration">SIGN UP</a>
+																		<%--<a href="#" class="btn btn-danger btn-lg btn-block" data-toggle="modal" data-target="#modalRegistration">Register Here</a>--%>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</li>
+                                    <li class="nav-item dropdown nav-dropdown-new" id="limenu_userProfile" runat="server" visible="false">
+                                        <a class="nav-link dropdown-toggle manu-nav-custom-link-for-myaccount" href="#" id="navbarDropdown112" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi <span id="username" runat="server"></span></a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                            <a class="dropdown-item" href="My-Bookings.aspx"><i class="fas fa-caret-right fa-lg text-light-low"></i>My Bookings</a>
+                                            <a class="dropdown-item" href="my-profile.aspx"><i class="fas fa-caret-right fa-lg text-light-low"></i>My Profile</a>
+                                            <a class="dropdown-item" href="Default.aspx"><i class="fas fa-caret-right fa-lg text-light-low"></i>Logout</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<%--user Registation--%>
+<div class="modal animated fadeInLeft delay-0s" id="modalRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content package-details-modal-for-enquiry">
+            <div class="modal-header text-white bg-danger pt-2 pb-2 pl-4 pr-4">
+                <h2 class="modal-title h3">Register Here
+                </h2>
+                <button type="button" class="close pt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="First Name" ID="txtFirstName"></asp:TextBox>
+                    </div>
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Last Name" ID="txtLastName"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Email Id" TextMode="Email" ID="txtEmailId"></asp:TextBox>
+                    </div>
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Mobile Number" ID="txtPhoneNumber" TextMode="Phone"></asp:TextBox>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Password" TextMode="Password" ID="txtPassword"></asp:TextBox>
+                    </div>
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Country" ID="txtCountry"></asp:TextBox>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <asp:TextBox runat="server" CssClass="form-control rounded-0" placeholder="Date Of Birth" ToolTip="Date of Birth" TextMode="Date" ID="txtDateOfBirth"></asp:TextBox>
+                    </div>
+                    <div class="form-group col text-center">
+                        <asp:LinkButton CssClass="btn btn-lg btn-danger" runat="server" ID="btnRegistationSave" Text="Register Now" OnClick="btnRegistationSave_Click" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+     <%--user Login--%>
+<div class="modal animated fadeIn delay-0s" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog " role="document">
+		<div class="modal-content package-details-modal-for-enquiry">
+			<div class="modal-header text-white bg-danger pt-2 pb-2 pl-4 pr-4">
+				<h2 class="modal-title h3">Login Here
+				</h2>
+				<button type="button" class="close pt-4" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="p-3 bg-white" style="box-shadow: 0 0 10px #888888">
+						<div>
+				<div class="form-group">
+
+					<input type="email" class="form-control cus-frm-crnt" id="useremailid" runat="server" placeholder="Email address" required="required" />
+				</div>
+				<div class="form-group">
+
+					<input type="password" class="form-control cus-frm-crnt" id="userPassword" runat="server" placeholder="Password" required="required" /><br />
+					<div class="help-block text-right"><a href="#">Forget the password ?</a></div>
+				</div>
+				<div class="form-group">
+					<asp:LinkButton ID="lbtn_signin" runat="server" Text="SIGN IN" class="btn btn-danger btn-block " OnClick="lbtn_signin_Click"></asp:LinkButton>
+				</div>
+
+			</div>
+			</div>
+			</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+	</div>
+<div class="container-fluid pl-0 pr-0">
+    <div class="row">
+        <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="bg-white w-100 border-top">
+            <div class="container ">
+                <img src="../img/memberslist.png" class="mt-5 mb-4 img-fluid" alt="Member List" />
+            </div>
+        </div>
+        <footer>
+            <div >
+                <div class="container container-new text-sm-center">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h1 class="ist-footer-title">ZENITH HOLIDAYS</h1>
+                            <ul class="footer-menu">
+                                <li class="znslsh">Zenith Leisure Holidays Ltd.</li>
+
+                                <li>
+                                    <p class="pull-left">Phone &nbsp;:</p>
+                                    <p class="pull-left" itemprop="telephone" style="width: 190px">
+                                        +91 033 40143901-23 (Kolkata)
+                                        <br>
+                                        +91 011-45120000 (Delhi) 
+                                        <br>
+                                        +91 080-42420500-25 (Bangalore)
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h2 class="footer-title">ABOUT ZENITH</h2>
+                            <ul class="footer-menu">
+                                <li><a href="About.aspx">About</a></li>
+                                <li><a href="#">Awards Gallery</a></li>
+                                <li><a href="#">Zenith Offers</a></li>
+                                <li><a href="#">Careers</a></li><%--our_career.aspx--%>
+                                <li><a href="termsandcondition.aspx">Terms & Conditions</a></li>
+                                <li><a href="how_to_book.aspx">How To Book</a></li>
+                                <li><a href="our_team.aspx">Our Team</a></li>
+                                <li><a href="zen_khusi.aspx">Zen Khushi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="footer-title">OUR PRODUCTS & SERVICES</h2>
+                            <ul class="footer-menu">
+                                <li><a href="https://www.payumoney.com/webfronts/#/index/ZenithLeisureHolidaysLtd">Make Payments</a></li>
+                                <li><a href="#">Visa Forms</a></li>
+                                <li><a href="#">Visa Documents Required</a></li>
+                                <li><a href="#">Corporate Travel(MICE)</a></li>
+                                <li><a href="mice">MICE</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h2 class="footer-title">HELP</h2>
+                            <ul class="footer-menu">
+                                <li><a href="contact_us.aspx">Enquiry</a></li>
+                                <li><a href="contact_us.aspx">Contact Us</a></li>
+                                <li><a href="contact_us.aspx">Customer Support</a></li>
+                                <li><a href="#">FeedBack</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="footer-email"><i class="fas fa-envelope fa-lg"></i><a href="mailto:web@zenithholidays.com">web@zenithholidays.com</a></span>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="footer-phone">24X7 <i class="fas fa-phone fa-lg"></i>(+91) 8100 667733</span>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="fotter-social-media">Connect with us: 
+                                <a href="https://www.facebook.com/zenithleisureholidays/" target="_blank"><i class="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/zenitholidays" target="_blank"><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/channel/UCDMpGfPzQBCD7Z2RwlTrtHQ" target="_blank"><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://plus.google.com/+ZenithholidaysIndia" target="_blank"><i class="fab fa-google-plus-square fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/company/zenith-leisure-holidays-pvt-ltd/" target="_blank"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/zenithleisureholidays/" target="_blank"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+                            </span>
+                        </div>
+                        <div class="col-sm-3">
+                            <span class="footer-payment">WE ACCEPT
+                                <img src="img/payu.jpg" alt="" /></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="w-100 bg-white">
+            <%--<div class="container ">
+                        <div class="row">
+                            <p class="col-sm-12 footer-payment">Members of</p>
+                            <br />
+                            <div class="col-xs-12 col-lg-3 col-sm-3 clear-padding">
+                                <img src="img\img3.png?version1.1" alt="">
+                            </div>
+                            <div class="col-xs-12 col-lg-2 col-sm-3 clear-padding">
+                                <img src="img\img4.png?version1.1" alt="">
+                            </div>
+                            <div class="col-xs-12 col-lg-2 col-sm-3 clear-padding">
+                                <img src="img\img5.png?version1.2" alt="">
+                            </div>
+                            <div class="col-xs-12 col-lg-2 col-sm-3 clear-padding">
+                                <img src="img\img6.png?version1.1" alt="">
+                            </div>
+                            <div class="col-xs-12 col-lg-1 col-sm-3 clear-padding">
+                                <img src="img\img7.png?version1.1" alt="">
+                            </div>
+                            <div class="col-xs-12 col-lg-2 col-sm-3 clear-padding">
+                                <img src="img\img8.png?version1.1" alt="">
+                            </div>
+                        </div>
+                    </div>--%>
+            <div class="container-fluid">
+                <div class="row">
+                    <p class="footr-copyright text-center">&copy; <%: DateTime.Now.Year %> - Zenithholidays.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+    <script type="text/javascript">
+        function viewpoint() {
+            (function ($) {
+                var element = $('.scrolldiv'),
+                    originalY = element.offset().top, bottom;
+
+                // Space between element and top of screen (when scrolling)
+                var topMargin = 10;
+
+                // Should probably be set in CSS; but here just for emphasis
+                element.css('position', 'relative');
+
+                $(window).on('scroll', function (event) {
+                    var scrollTop = $(window).scrollTop();
+
+                    element.stop(false, false).animate({
+                        top: scrollTop < originalY
+                            ? 0
+                            : scrollTop - originalY + topMargin
+                    }, 300);
+                });
+            })(jQuery);
+        }
+        //$(window).load(viewpoint);
+        $(document).ready(function () {
+            var viewportWidth = $(window).width();
+            if (viewportWidth < 600) {
+                $(".scrolldiv").removeClass("scrolldiv").addClass("scrolldivv");
+            } else {
+                viewpoint();
+            }
+        });
+    </script>
+    <script>
+        $("#btn_saveEnq").on('click', function (e) {
+            var name = $('#txt_YourName').val();
+            var email = $('#txt_emailid').val();
+            var phone = $('#txt_mobileno').val();
+            var city = $('#txt_cityname').val();
+
+            if (name === '') {
+                alert("Please input Your name");
+                $('#txt_YourName').addClass("is-invalid");
+                e.preventDefault();
+            }
+            else if (email === '') {
+                alert("Please input Your Email");
+                $('#txt_emailid').addClass("is-invalid");
+                e.preventDefault();
+            }
+
+            else if (!$("#checkbox1").is(":checked")) {
+                alert("Checkbox is Not unchecked.");
+                $('#checkbox1').addClass("is-invalid");
+                e.preventDefault();
+            }
+            else if (!$("#checkbox2").is(":checked")) {
+                alert("Checkbox is Not unchecked.");
+                $('#checkbox2').addClass("is-invalid");
+                e.preventDefault();
+            }
+            else if (phone === '') {
+                alert("Please input Your Phone no");
+                $('#txt_mobileno').addClass("is-invalid");
+                e.preventDefault();
+            }
+            else if (city === '') {
+                alert("Please input Your City");
+                $('#txt_cityname').addClass("is-invalid");
+                e.preventDefault();
+            } else {
+                $('.validation').addClass("is-valid");
+            }
+
+        });
+
+    </script>
+</body>
+</html>
