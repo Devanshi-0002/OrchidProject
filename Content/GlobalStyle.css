@@ -604,12 +604,12 @@ footer {
 	position: relative;
 }
 .footr-copyright {
-	background: #f3f3f3;
 	padding: 5px 0;
 	font-size: 15px;
 	margin: 0;
 	width: 100%;
-	margin-top: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .footer-payment {
 	color: #bdc5ce;
