@@ -6,6 +6,80 @@
     <meta name="keywords" content="India holiday packages, tours and travels, holiday companies, mice tourism, holidays travel, leisure holidays" />
     <meta name="description" content="Summer holiday packages from leading tours & travel company in India. Bhutan, Ladakh, Hong Kong, Nort heast & Thailand Packages at *Best price. Call @ 6290952054" />
     <style>
+        /* Style for carousel overlay */
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensure it spans the full width */
+            height: 100%;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align text at the top */
+            align-items: flex-start; /* Align text to the left */
+        }
+
+        /* Style for carousel text with a left border */
+        .carousel-text-with-border p {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-text-with-border .border-line {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: white; /* Black border color */
+        }
+
+        /* Style for "Book Now" button */
+        .book-now-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+            .book-now-btn:hover {
+                background-color: #0056b3;
+            }
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay-meta-box {
+            text-align: center;
+            color: white;
+        }
+
+        .carousel-heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .carousel-text {
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+
         .responsive-search-btn {
             font-size: 15px;
             font-weight: bold;
@@ -397,6 +471,10 @@
                                             <div class="col-sm-4">
                                                 <div class="promo-package-thumble">
                                                     <img src="https://www.yatra.com/ythomepagecms/media/todayspick/2017/Dec/f2b71c90fc1a350349df55a27372a0eb.jpg" class="img-responsive" alt="">
+                                                    <div class="carousel-overlay">
+                                                        <h2>Modern Wonders</h2>
+                                                        <p>Explore the beauty of charismatic destinations</p>
+                                                    </div>
                                                     <div class="promo-box-caotion">
                                                         <div><span class="day-tag">6N 7D</span> <span class="price-tag">INR 33,999 </span></div>
                                                     </div>
@@ -494,7 +572,7 @@
             </div>
         </div>
     </section>
-    <section class="why-choose-us-area pl-3 pr-4 pt-3">
+    <section class="why-choose-us-area1 pl-3 pr-4 pt-3">
         <div class="container">
             <div class="row">
                 <div class="home-theme-box">
@@ -617,7 +695,9 @@
             </div>
         </div>
     </section>
-    <section class="Zenith-Populer-Packages-section pt-2">
+
+
+    <section class="why-choose-us-area Zenith-Populer-Packages-section pt-2" style="background-color: #e9efea!important">
         <div class="container ">
             <div class="row">
                 <div class="col-md-12">
@@ -633,6 +713,8 @@
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
                                             <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
                                         </g></svg>
+
+
                                     <svg width="12px" height="12px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
                                             <rect x="1" y="1" width="14" height="14" fill="#666666"></rect>
@@ -667,6 +749,19 @@
                                 </asp:Repeater>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" Zenith-Populer-Packages-section pt-2">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="body-package">
                         <div class="home-theme-box">
                             <div class="row custom-row">
                                 <div class="view-all-area-homepage">
@@ -714,6 +809,8 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
 
@@ -793,11 +890,21 @@
         <div class="container">
             <section class="after-header-section">
                 <div class="after-header">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselWhyChooseUsControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <!--<div class="carousel-item active"><a href="campaign/fbcampaign.aspx"> <img class="d-block w-100 custom-slider-image" src="img/Background/BIGSALE.jpg" alt="First slide"></a> </div>-->
                             <div class="carousel-item active">
                                 <img class="d-block w-100 custom-slider-image" src="img/Background/1.jpg" alt="First slide">
+                                <div class="carousel-overlay">
+                                    <div class="overlay-meta-box-dubai" style="text-align: left; margin-left: 10px;">
+                                        <div class="carousel-text-with-border">
+                                            <p><span class="border-line" style="color: white"></span>Dubai Saudi Arabia</p>
+                                            <p style="font-size: 25px"><span class="border-line"></span><strong>Modern wonders and heritage</strong></p>
+                                            <p>Dubai, Riyadh, Jeddah</p>
+                                            <p>7 nights/8 days/ from April 2025</p>
+                                        </div>
+                                        <button class="btn btn-primary book-now-btn">Book Now</button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100 custom-slider-image" src="img/Background/2.jpg" alt="Second slide">
@@ -827,7 +934,20 @@
                                 <img class="d-block w-100 custom-slider-image" src="img/Background/10.jpg" alt="Third slide">
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span> </a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span> </a>
+                        <a class="ml-3 carousel-control-prev custom-carousel-btn" href="#carouselWhyChooseUsControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon2" aria-hidden="true">
+                                <i class="fa fa-arrow-left text-dark"></i>
+                            </span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="mr-3 carousel-control-next custom-carousel-btn" href="#carouselWhyChooseUsControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon2" aria-hidden="true">
+                                <i class="fa fa-arrow-right text-dark"></i>
+                            </span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <%--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span> </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span> </a>--%>
                     </div>
                     <div class="body-content">
                         <div class="container">
@@ -838,14 +958,7 @@
                                         <br />
                                         <br />
                                         <br />
-                                        <%-- <ul class="nav nav-pills nav-pills-new">
-                                  <li class="nav-item"><a class="nav-link active nav-link-custom" href="holidays.aspx" target="">Holidays</a> </li>
-                                  <li class="nav-item"><a class="nav-link nav-link-custom" href="HotelSearch.aspx" target="">Hotels</a> </li>
-                                  <li class="nav-item "><a class="nav-link nav-link-custom" href="SightSeeingSearch.aspx" target="">Sightseeing</a> </li>
-                                  <li class="nav-item"><a class="nav-link nav-link-custom" href="TransferSearch.aspx" target="">Transfer</a> </li>
-                                  <li class="nav-item"></li>
-                                  <li class="nav-item" style="display: none"><a class="nav-link nav-link-custom nav-link-custom-after text-white" data-toggle="modal" data-target="#customizedHolidays">Customized Holidays</a> </li>
-                              </ul>--%>
+
                                         <div class="tab-content tab-content-custom">
 
                                             <div class="tab-pane active container" id="holidays">
@@ -1062,7 +1175,14 @@
 
     <section class="why-choose-us-area1">
         <div class="container text-center" style="margin-top: 20px; margin-bottom: 20px">
-            <h3 class="mb-4"><i class="fas fa-lightbulb"></i>Why Book with OrchidGlobal</h3>
+            <h3 class="mb-4">
+                <svg width="50px" height="50px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M550.4 713.6c0 19.7-20 35.7-44.7 35.7-24.7 0-44.7-16-44.7-35.7" fill="#3e6eff"></path>
+                        <path d="M653.9 520.8c0-76.8-64-139-142.9-139s-142.9 62.2-142.9 139c0 16.6 3.1 32.4 8.6 47.1L460 774.8h97l81.5-191.5c11.6-26 15.4-33.3 15.4-62.5z" fill="#FBBA22"></path>
+                        <path d="M612.9 766.4c0 14.8-12.1 26.8-27 26.8H425.5c-14.9 0-27-12-27-26.8s12.1-26.8 27-26.8h160.3c15 0 27.1 12 27.1 26.8zM612.9 820c0 14.8-12.1 26.8-27 26.8H425.5c-14.9 0-27-12-27-26.8s12.1-26.8 27-26.8h160.3c15 0 27.1 12 27.1 26.8z" fill="#3e6eff"></path>
+                        <path d="M511 363.9c-88.7 0-160.8 70.4-160.8 156.9 0 18 3.3 36 9.9 53.8l59.5 147.8c-21.9 2.9-38.9 21.5-38.9 44.1 0 10.1 3.5 19.3 9.2 26.8-5.7 7.5-9.2 16.7-9.2 26.8 0 24.6 20.1 44.7 44.9 44.7h17.6c0 29.6 28.1 53.6 62.5 53.6s62.5-24 62.5-53.6h17.6c24.8 0 44.9-20 44.9-44.7 0-10.1-3.5-19.3-9.2-26.8 5.7-7.5 9.2-16.7 9.2-26.8 0-20.3-13.8-37.4-32.6-42.7l56.7-133.1 1.4-3.1c11-24.7 15.6-34.9 15.6-66.8 0-86.5-72.1-156.9-160.8-156.9z m-5.3 518.7c-14.3 0-26.8-8.3-26.8-17.9h53.6c0 9.5-12.5 17.9-26.8 17.9z m80.2-53.6H425.5c-5.1 0-9.2-4-9.2-8.9s4.1-8.9 9.2-8.9h160.3c5.1 0 9.2 4 9.2 8.9s-4.1 8.9-9.1 8.9z m0-53.6H425.5c-5.1 0-9.2-4-9.2-8.9s4.1-8.9 9.2-8.9h160.3c5.1 0 9.2 4 9.2 8.9s-4.1 8.9-9.1 8.9z m-90.6-53.6l-18.5-119.9c8.6 3.8 20 7.1 34 7.1 13.1 0 23.7-2.9 31.6-6.4L524 721.8h-28.7zM623.6 573l-63.4 148.8h-18l21-136.3c0.6-3.9-1.4-7.7-5-9.4-3.5-1.7-7.8-0.9-10.5 2-0.5 0.5-12.4 13-36.9 13-25 0-39.1-12.9-39.6-13.4-2.8-2.7-6.9-3.3-10.3-1.5-3.4 1.8-5.3 5.5-4.7 9.3l21 136.3h-19.4l-64.4-160.1c-5-13.4-7.5-27.1-7.5-40.9 0-66.8 56.1-121.1 125.1-121.1s125.1 54.4 125.1 121.1c0 24.2-2.4 29.6-12.5 52.2zM371.9 373.3c7-7 6.9-18.3-0.1-25.3l-71.5-71c-7-7-18.3-6.9-25.3 0.1s-6.9 18.3 0.1 25.3l71.6 71.1c3.5 3.5 8 5.2 12.6 5.2 4.6-0.1 9.2-1.8 12.6-5.4zM747 277.1c-6.9-7-18.3-7-25.3-0.1l-71.6 71.1c-7 6.9-7 18.2-0.1 25.3 3.5 3.5 8.1 5.3 12.7 5.3s9.1-1.7 12.6-5.2l71.6-71.1c7-7 7.1-18.3 0.1-25.3zM511 328.7c9.9 0 17.9-8 17.9-17.9V185.7c0-9.9-8-17.9-17.9-17.9s-17.9 8-17.9 17.9v125.1c0 9.9 8 17.9 17.9 17.9z" fill="#211F1E"></path>
+                    </g></svg>
+                Why Book with OrchidGlobal</h3>
             <div class="row">
                 <div class="col-sm-2 mb-2">
                     <div class="card shadow h-100" style="border-radius: 8px">
@@ -1130,7 +1250,7 @@
                             <div class="row" style="text-align: center">
                                 <div class="col-6 col-sm-6"></div>
                                 <div class="col-6 col-sm-6">
-                                    <div class="before-footer before-footer-new pb-0">
+                                    <div class="before-footer-new-needhelp  before-footer before-footer-new pb-0">
                                         <h2>Need Help?</h2>
                                     </div>
                                 </div>
@@ -1167,36 +1287,40 @@
                             <div class="before-footer ml-sm-4">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="input-group mb-4">
+                                        <div class="input-group mb-3">
                                             <div class="input-group-prepend"><span class="input-group-text home-subs-icon"><i class="fas fa-envelope fa-lg"></i></span></div>
-                                            <input id="txt_EmailId" runat="server" type="email" class="form-control" placeholder="Email Id" />
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txt_EmailId"
-                                                Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Email" runat="server" />
-                                            <asp:RegularExpressionValidator ID="regexEmailValid" runat="server"
-                                                ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-                                                ControlToValidate="txt_EmailId" ValidationGroup="sbk" ForeColor="white"
-                                                ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
+                                            <input id="txt_EmailId" runat="server" type="email" class="form-control extra-box-input-box-shadow" placeholder="Email Id" />
+                                            <div class="d-block w-100">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txt_EmailId"
+                                                    Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Email" runat="server" />
+                                                <asp:RegularExpressionValidator ID="regexEmailValid" runat="server"
+                                                    ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                                    ControlToValidate="txt_EmailId" ValidationGroup="sbk" ForeColor="white"
+                                                    ErrorMessage="Invalid Email Format"></asp:RegularExpressionValidator>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <div class="input-group mb-4">
+                                        <div class="input-group mb-3">
                                             <%-- <input id="txt_PhoneNo" runat="server" type="text" class="form-control rounded-0" placeholder="Phone No" ondisposed="txt_PhoneNo_Disposed">--%>
                                             <span id="lbl_subscriber_mobileno" runat="server" style="display: none"></span>
                                             <div class="input-group-prepend"><span class="input-group-text home-subs-icon"><i class="fas fa-phone fa-lg"></i></span></div>
-                                            <asp:TextBox ID="txt_PhoneNo" runat="server" class="form-control " placeholder="Mobile Number" TextMode="Phone"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txt_PhoneNo" Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Mobile no." runat="server" />
-                                            <asp:RegularExpressionValidator ID="REVtxt_PhoneNo" runat="server" ControlToValidate="txt_PhoneNo" ValidationGroup="sbk" ForeColor="white" ErrorMessage="Invalid Mobile no." ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
+                                            <asp:TextBox ID="txt_PhoneNo" runat="server" class="form-control extra-box-input-box-shadow" placeholder="Mobile Number" TextMode="Phone"></asp:TextBox>
+                                            <div class="d-block w-100">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txt_PhoneNo" Display="Static" ForeColor="white" ValidationGroup="sbk" ErrorMessage="Enter Mobile no." runat="server" />
+                                                <asp:RegularExpressionValidator ID="REVtxt_PhoneNo" runat="server" ControlToValidate="txt_PhoneNo" ValidationGroup="sbk" ForeColor="white" ErrorMessage="Invalid Mobile no." ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="input-group mb-4">
                                             <div class="input-group-prepend"><span class="input-group-text home-subs-icon"><i class="fa fa-home"></i></span></div>
-                                            <input id="txt_City" runat="server" type="text" class="form-control " placeholder="City" />
+                                            <input id="txt_City" runat="server" type="text" class="form-control extra-box-input-box-shadow" placeholder="City" />
                                         </div>
                                     </div>
                                 </div>
                                 <asp:LinkButton ID="lnlbtn_SUBSCRIBENOW" runat="server" type="submit"
-                                    class="btn home-subs-icon text-dark  subscribe-btn-new" Text="SUBSCRIBE NOW" ValidationGroup="sbk"
+                                    class="btn home-subs-icon text-dark  subscribe-btn-new extra-box-input-box-shadow" Text="SUBSCRIBE NOW" ValidationGroup="sbk"
                                     OnClick="lnlbtn_SUBSCRIBENOW_Click"></asp:LinkButton>
                             </div>
                         </div>
