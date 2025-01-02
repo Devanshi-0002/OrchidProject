@@ -715,7 +715,9 @@
             </div>
         </div>
     </section>
-    <section class="why-choose-us-area">
+
+
+    <%-- <section class="why-choose-us-area">
         <div class="container ">
             <div class="row mt-3">
                 <div class="col-md-4 col-sm-12 clear-right-padding">
@@ -785,7 +787,338 @@
                 </div>
             </div>
         </div>
+    </section>--%>
+
+    <section class="why-choose-us-area1">
+        <div class="container">
+            <section class="after-header-section">
+                <div class="after-header">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!--<div class="carousel-item active"><a href="campaign/fbcampaign.aspx"> <img class="d-block w-100 custom-slider-image" src="img/Background/BIGSALE.jpg" alt="First slide"></a> </div>-->
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/3.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/4.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/5.jpg?2" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/6.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/7.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/8.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/9.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 custom-slider-image" src="img/Background/10.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span> </a><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span> </a>
+                    </div>
+                    <div class="body-content">
+                        <div class="container">
+                            <div class="col-sm-12">
+                                <%--<h2 class="text-center header-headline">Book Hotels and Holiday Packages</h2>--%>
+                                <div class="header-search-area">
+                                    <div class="col-sm-12">
+                                        <br />
+                                        <br />
+                                        <br />
+                                        <%-- <ul class="nav nav-pills nav-pills-new">
+                                  <li class="nav-item"><a class="nav-link active nav-link-custom" href="holidays.aspx" target="">Holidays</a> </li>
+                                  <li class="nav-item"><a class="nav-link nav-link-custom" href="HotelSearch.aspx" target="">Hotels</a> </li>
+                                  <li class="nav-item "><a class="nav-link nav-link-custom" href="SightSeeingSearch.aspx" target="">Sightseeing</a> </li>
+                                  <li class="nav-item"><a class="nav-link nav-link-custom" href="TransferSearch.aspx" target="">Transfer</a> </li>
+                                  <li class="nav-item"></li>
+                                  <li class="nav-item" style="display: none"><a class="nav-link nav-link-custom nav-link-custom-after text-white" data-toggle="modal" data-target="#customizedHolidays">Customized Holidays</a> </li>
+                              </ul>--%>
+                                        <div class="tab-content tab-content-custom">
+
+                                            <div class="tab-pane active container" id="holidays">
+                                                <div class="row custom-row-new">
+                                                    <div class="col-sm-10" style="border-right: none">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text input-group-text-custom"
+                                                                        style="border-radius: 50%!important; font-size: 20px;"
+                                                                        id="inputGroupPrepend2">
+                                                                        <i class="fas fa-map-marker-alt"></i></span>
+                                                                </div>
+                                                                <span id="Span1" runat="server" style="display: none"></span>
+                                                                <%--<input type="text" class="form-control custom-form-control" id="validationDefaultUsername" placeholder="Where Will Your Next Holiday Be" aria-describedby="inputGroupPrepend2">--%>
+                                                                <asp:TextBox ID="TextBox1" runat="server" Font-Size="14px"
+                                                                    placeholder="Enter Destination eg. Thailand, Japan , Europe" class="form-control custom-form-control font-weight-bold"></asp:TextBox>
+                                                                <%--<asp:AutoCompleteExtender ID="TextBox1_AutoCompleteExtender" runat="server" Enabled="True" ServiceMethod="Listofdestination" MinimumPrefixLength="1" EnableCaching="true" TargetControlID="txtdestination" CompletionInterval="1000" CompletionSetCount="10" CompletionListCssClass="completionListElement" CompletionListItemCssClass="listItem" CompletionListHighlightedItemCssClass="highlightedListItem"/>--%>
+                                                                <asp:HiddenField ID="HiddenField1" runat="server" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 clear-padding text-center" style="align-self: center;">
+                                                        <%--<a href="#" class="btn btn-danger custom-btn-danger">Search</a>--%>
+                                                        <asp:LinkButton
+                                                            ID="LinkButton1"
+                                                            runat="server"
+                                                            class="btn btn-primary custom-btn-primary responsive-search-btn"
+                                                            Text="Search"
+                                                            OnClick="linkbtn_search_Click"></asp:LinkButton>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="tab-pane container" id="hotels">
+                                                <div class="row custom-row-new">
+                                                    <div class="col-sm-3 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" id="validationDefaultUsername1" placeholder="To" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom" id="inputGroupPrepend22"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" id="validationDefaultUsername13" placeholder="Nationality" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom" id="inputGroupPrepend221"><i class="fas fa-globe"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" id="datepicker" class="form-control custom-form-control" placeholder="Check-in">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-calendar-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="Check-out" id="datepicker1">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-calendar-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <select class="form-control custom-form-control">
+                                                                    <option>1 Adult, 0 Children</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-1 clear-padding"><a href="#" class="btn btn-danger custom-btn-danger">Search</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container" id="sightseeing">
+                                                <div class="row custom-row-new">
+                                                    <div class="col-sm-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="To" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="Nationality" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-globe"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" id="datepicker2" class="form-control custom-form-control" placeholder="Check-in">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-calendar-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <select class="form-control custom-form-control">
+                                                                    <option>1 Adult, 0 Children</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2"><a href="#" class="btn btn-danger custom-btn-danger">Search</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container" id="transfer">
+                                                <div class="row custom-row-new">
+                                                    <div class="col-sm-6" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" id="validationDefaultUsername1111" placeholder="From Where" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom" id="inputGroupPrepend211"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="To" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2"><a href="#" class="btn btn-danger custom-btn-danger">Search</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container" id="cruise">
+                                                <div class="row custom-row-new">
+                                                    <div class="col-sm-6" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" id="validationDefaultUsername1111" placeholder="From Where" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom" id="inputGroupPrepend211"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="To" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2"><a href="#" class="btn btn-danger custom-btn-danger">Search</a> </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container" id="forex">
+                                                <div class="row custom-row-new">
+                                                    <div class="col-sm-2" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <select class="form-control custom-form-control">
+                                                                    <option>Select Your Currency</option>
+                                                                    <option>USD</option>
+                                                                    <option>SGD</option>
+                                                                    <option>EUR</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" id="validationDefaultUsername11111" placeholder="Type Your Amount" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom" id="inputGroupPrepend2111"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="Delivery Location" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="far fa-money-bill-alt"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                        <div class="custom-area">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control custom-form-control" placeholder="Contact Details" aria-describedby="inputGroupPrepend2">
+                                                                <div class="input-group-prepend"><span class="input-group-text input-group-text-custom"><i class="fas fa-envelope"></i></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-2"><a href="#" class="btn btn-danger custom-btn-danger">Search</a> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </section>
+
+    <section class="why-choose-us-area1">
+        <div class="container text-center" style="margin-top: 20px; margin-bottom: 20px">
+            <h3 class="mb-4"><i class="fas fa-lightbulb"></i>Why Book with OrchidGlobal</h3>
+            <div class="row">
+                <div class="col-sm-2 mb-2">
+                    <div class="card shadow h-100" style="border-radius: 8px">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe fa-2x mb-3"></i>
+                            <p class="card-text">20 Locations across India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 mb-2">
+                    <div class="card shadow h-100" style="border-radius: 8px">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe fa-2x mb-3"></i>
+                            <p class="card-text">10 Locations Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 mb-2">
+                    <div class="card shadow h-100" style="border-radius: 8px">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-2x mb-3"></i>
+                            <p class="card-text">500+ Employees</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 mb-2">
+                    <div class="card shadow h-100" style="border-radius: 8px">
+                        <div class="card-body text-center">
+                            <i class="fas fa-smile fa-2x mb-3"></i>
+                            <p class="card-text">1 Million+ Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 mb-2">
+                    <div class="card shadow h-100" style="border-radius: 8px">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hand-holding-usd fa-2x mb-3"></i>
+                            <p class="card-text">Transparent Pricing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 mb-2">
+                    <div class="card shadow h-100" style="border-radius: 8px">
+                        <div class="card-body text-center">
+                            <i class="fas fa-money-check-alt fa-2x mb-3"></i>
+                            <p class="card-text">Easy Payment Options</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <%-- <section class="why-choose-us-area"><div class="container "><div class="row pl-5 pr-5"><br/><p style="color: #999">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie ante ac augue lacinia cursus. Pellentesque fringilla nisl vitae lectus commodo rutrum. Vestibulum maximus, enim ut aliquet fringilla, elit leo tincidunt mi, sit amet accumsan nulla lorem vel ex. Nam dolor ex, interdum sit amet maximus in, laoreet eget lacus. Ut tincidunt velit felis, sit amet eleifend lorem eleifend semper. Pellentesque sit amet est nec nulla feugiat pulvinar vitae id lacus. Phasellus purus est, vestibulum nec luctus vel, rhoncus mattis urna. Aliquam suscipit, ex eu blandit commodo, dui mi dictum augue, a ultrices neque nulla et nunc. Aliquam fermentum efficitur urna, at ullamcorper arcu. Maecenas turpis turpis, sodales ut dictum eget, pellentesque nec augue. Nunc malesuada pharetra augue et aliquet. Sed in turpis fermentum, efficitur augue vel, luctus ex.</p></div></div></section>--%> <%--</ContentTemplate></asp:UpdatePanel>--%>
     <section class="extra-box-area padT0 padB0">
         <div class="container-fluid">
