@@ -6,8 +6,28 @@
     <meta name="keywords" content="India holiday packages, tours and travels, holiday companies, mice tourism, holidays travel, leisure holidays" />
     <meta name="description" content="Summer holiday packages from leading tours & travel company in India. Bhutan, Ladakh, Hong Kong, Nort heast & Thailand Packages at *Best price. Call @ 6290952054" />
     <style>
+        .featured-destinations-box-area {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .featured-destinations-box-area li {
+                flex: 1 1 calc(33.333% - 20px); /* 3 items per row with spacing */
+                margin: 10px; /* Adjust as needed */
+                box-sizing: border-box;
+            }
+
+        .Zenith-Populer-Packages {
+            width: 100%;
+        }
+
+
         /* Style for carousel overlay */
         .carousel-overlay {
+            border-radius:20px;
             position: absolute;
             top: 0;
             left: 0;
@@ -793,10 +813,8 @@
                                                     <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Image1") %>' CssClass="Zenith-Populer-Packages" />
                                                     <div class="imgoverlay-zenithpackage">
                                                         <div class="overlay-meta-box overlay-meta-box-top">
-                                                            <%--<asp:Label ID="Label1" runat="server" Text='<%# Eval("Pkg_name") %>' Font-Size="14px" Style="color: white;" Visible-="false"></asp:Label><asp:Label ID="lblDomgroup" runat="server" Text='<%# Eval("Pkg_type") %>' Visible="false"></asp:Label><asp:Label ID="lblPkg_id" runat="server" Text='<%# Eval("Pkg_id") %>' Visible="false"></asp:Label>--%> <%--<h5><i class="fas fa-rupee-sign"></i> <%# Eval( "Per_Unit_Cost") %></h5>--%>
-                                                            <h3 class="font-weight-bold" style="color: white"><%# Eval("Destination")%></h3>
+                                                            <h3 class="font-weight-bold" style="color: white; text-align:left"><%# Eval("Destination")%></h3>
                                                         </div>
-                                                        <%--<asp:Label ID="Label2" runat="server" Text='<%# Eval("Destination") %>'></asp:Label>--%>
                                                     </div>
                                                 </asp:LinkButton>
                                             </div>
@@ -893,7 +911,7 @@
                     <div id="carouselWhyChooseUsControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/1.jpg" alt="First slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/1.jpg" alt="First slide">
                                 <div class="carousel-overlay">
                                     <div class="overlay-meta-box-dubai" style="text-align: left; margin-left: 10px;">
                                         <div class="carousel-text-with-border">
@@ -907,31 +925,31 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/2.jpg" alt="Second slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/2.jpg" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/3.jpg" alt="Third slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/3.jpg" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/4.jpg" alt="Second slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/4.jpg" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/5.jpg?2" alt="Third slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/5.jpg?2" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/6.jpg" alt="Second slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/6.jpg" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/7.jpg" alt="Third slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/7.jpg" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/8.jpg" alt="Second slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/8.jpg" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/9.jpg" alt="Third slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/9.jpg" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 custom-slider-image" src="img/Background/10.jpg" alt="Third slide">
+                                <img class="d-block w-100 custom-slider-image-dubai" src="img/Background/10.jpg" alt="Third slide">
                             </div>
                         </div>
                         <a class="ml-3 carousel-control-prev custom-carousel-btn" href="#carouselWhyChooseUsControls" role="button" data-slide="prev">
@@ -997,7 +1015,7 @@
 
                                             <div class="tab-pane container" id="hotels">
                                                 <div class="row custom-row-new">
-                                                    <div class="col-sm-3 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-md-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control custom-form-control" id="validationDefaultUsername1" placeholder="To" aria-describedby="inputGroupPrepend2">
@@ -1005,7 +1023,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-md-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control custom-form-control" id="validationDefaultUsername13" placeholder="Nationality" aria-describedby="inputGroupPrepend2">
@@ -1013,7 +1031,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-sm-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" id="datepicker" class="form-control custom-form-control" placeholder="Check-in">
@@ -1021,7 +1039,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-sm-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control custom-form-control" placeholder="Check-out" id="datepicker1">
@@ -1043,7 +1061,7 @@
                                             </div>
                                             <div class="tab-pane container" id="sightseeing">
                                                 <div class="row custom-row-new">
-                                                    <div class="col-sm-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-md-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control custom-form-control" placeholder="To" aria-describedby="inputGroupPrepend2">
@@ -1051,7 +1069,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-md-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control custom-form-control" placeholder="Nationality" aria-describedby="inputGroupPrepend2">
@@ -1059,7 +1077,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-2 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
+                                                    <div class="col-md-4 low-padding" style="border-right: 1px solid #000000; border-right: 1px solid rgba(0, 0, 0, 0.30)">
                                                         <div class="custom-area">
                                                             <div class="input-group">
                                                                 <input type="text" id="datepicker2" class="form-control custom-form-control" placeholder="Check-in">

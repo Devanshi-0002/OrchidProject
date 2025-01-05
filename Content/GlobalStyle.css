@@ -80,6 +80,11 @@ p,i,li,ul,h1,h2,h3,h4,h5,h6,aside,header,footer {
 	height: 435px;
 	object-fit: cover;
 }
+.custom-slider-image-dubai {
+	height: 435px;
+	border-radius:15px;
+	object-fit: cover;
+}
 .header-headline {
 	color: #fff;
 	padding: 40px 0 20px 0;
